@@ -3,7 +3,8 @@ h3{
 }
 .size{
     width: 300px;
-    border: 15px;
+    border : 15px;
+    color : aquamarine;
     margin: auto; 
     padding: 5px;
 }
