@@ -4,7 +4,6 @@
 .container{
     width: 1536px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 .rel-left{
     background-color: black;
