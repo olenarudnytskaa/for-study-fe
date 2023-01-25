@@ -235,7 +235,7 @@ h1 div{
 }
 .autor h1{
     font-family: 'Poppins', sans-serif;
-    width: 645px;
+    width: 245px;
     font-size: 21px;
     font-weight: 500;
     color: #DEA405;
@@ -606,10 +606,6 @@ h1 div{
     height: 296px;
     display: inline-block;
 }
-
-
-
-
 .yellow{
     width: 1509px;
     height: 499px;
