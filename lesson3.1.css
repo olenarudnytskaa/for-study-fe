@@ -1,5 +1,6 @@
 .body{
-    margin: 0 auto;
+    width: 1512px;
+    margin: auto;
 }
 .container{
     width: 1512px;
@@ -277,7 +278,7 @@ h1 div{
     color: #DEA405;
 }
 .block{
-    width: 1609px;
+    width: 1509px;
     height: 802px;
     background-color: #0062FF;
     margin: 150px 0px 0px 0px;
@@ -477,12 +478,8 @@ h1 div{
     margin: 72px auto;
     display: inline-block;
 }
-
-
-
-
 .row{
-    width: 1609px;
+    width: 1509px;
     display: inline-block;
     margin: auto;
 }
@@ -828,7 +825,6 @@ h1 div{
 }
 .email input{
     width: 508px;
-    color: #2203E4;
     height: 70px;
     border-radius: 12px;
     border: none;
