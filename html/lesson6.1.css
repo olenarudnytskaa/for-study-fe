@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.head{
+    width: 1920px;
+    height: 1573px;
+    background-color: black;
+    background-image: url(../img/fon.png);
+}
+.head h1{
+    width: 81px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    top: 58px;
+    left: 85px;
+}
+.link{
+    width: 480px;
+    display: inline-block;
+    position: relative;
+    top: 66px;
+    left: 887px;
+}
+.link a{
+    width: 105px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    margin: auto 25px;
+}
+.search{
+    width: 108px;
+    display: inline-block;
+    position: relative;
+    top: 64px;
+    left: 1100px;
+}
+.search img{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.img{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    background-color: transparent;
+}
+.img img{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+}
+.search input{
+    width: 69px;
+    height: 23px;
+    font-size: 17px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+}
+.input text{
+    width: 69px;
+    height: 23px;
+    font-size: 17px;
+    font-weight: 400;
+    display: inline-block;
+    text-align: right;
+    border: none;
+}
+.side1{
+    width: 30px;
+    height: 220px;
+    display: inline-block;
+    writing-mode: vertical-rl;
+    position: relative;
+    top: 559px;
+    left: -605px;
+}
+.social{
+    width: 30px;
+    height: 220px;
+    display: inline-block;
+}
+.social h2{
+    width: 30px;
+    height: 220px;
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+.social img{
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    left: 30px;
+    padding: 12px 0px;
+
+}
