@@ -1,9 +1,6 @@
 *{
     box-sizing: border-box;
 }
-.header{
-    margin: auto;
-}
 .head{
     width: 1920px;
     height: 1573px;
@@ -11,7 +8,8 @@
 }
 .start{
     width: 1751px;
-    margin:  auto;
+    padding-top: 64px;
+    margin: auto;
 }
 .start h1{
     width: 81px;
@@ -88,8 +86,7 @@
     display: inline-block;
     writing-mode: vertical-rl;
     position: relative;
-    top: 350px;
-    left: 79px;
+    left: 83px;
 }
 .social{
     width: 30px;
@@ -109,27 +106,30 @@
     display: inline-block;
     position: relative;
     top: 100px;
-    left: 30px;
+    left: 43px;
     padding: 12px 0px;
 }
 .side2{
     width: 950px;
     display: inline-block;
     position: relative;
-    top: 290px;
+    top: 130px;
     left: 330px;
 }
 .line{
     width: 72px;
     height: 2px;
     background-color: #FFC178;
+    position: relative;
+    top: 27px;
 }
 .title{
     width: 950px;
-    display: inline-block;
-    position: relative;
-    left: 104px;
-    top: -8px;
+    height: 284px;
+}
+.title2{
+    width: 950px;
+    margin: auto;
 }
 .title h2{
     color: #FFC178;
@@ -137,29 +137,32 @@
     font-weight: 700px;
     letter-spacing: 8px;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+    left: 120px;
 }
-.title h3{
+.title2 h3{
     color:  white;
     font-size: 96px;
     font-weight: 700px;
     font-family: 'Open Sans', sans-serif;
-    position: relative;
-    top: 32px;
     line-height: 100px;
+    margin-bottom: 20px;
+    margin-top: 32px;
 }
-.title h4{
+.title2 h4{
     color: white;
     font-size: 88px;
     font-weight: 400px;
-    position: relative;
-    top: 50px;
+    font-family: 'Open Sans', sans-serif;
     line-height: 100px;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 .down{
     width: 146px;
     display: inline-block;
     position: relative;
-    top: 165px;
+    top: 110px;
     left: 490px;
 }
 .down button{
@@ -185,7 +188,7 @@
     height: 358px;
     background-image: url(../img/shadow.png);
     position: relative;
-    top: -360px;
+    top: 726px;
 }
 .shadow1{
     width: 399px;
@@ -197,10 +200,7 @@
 }
 .block-main{
     width: 1920px;
-    height: 3972px;
     background-color: black;
-    position: relative;
-    top: -450px;
 }
 .block1{
     width: 1462px;
@@ -213,7 +213,7 @@
     margin: auto;
     display: inline-block;
     position: relative;
-    top: -100px;
+    top: -220px;
 }
 .photo1 img{
     width: 598px;
@@ -225,9 +225,8 @@
     height: 2px;
     background-color: #FFC178;
     display: inline-block;
-    margin: 10px 24px;
     position: relative;
-    left: -18px;
+   top: 6px;
 }
 .shadow1{
     width: 399px;
@@ -256,7 +255,7 @@
     margin: 0px 110px;
     display: inline-block;
     position: relative;
-    top: -200px;
+    top: -325px;
     left: 100px;
 }
 .text3 h1{
@@ -285,11 +284,12 @@
     font-family: 'Open Sans', sans-serif;
     color: white;
     line-height: 87px;
+    margin: 0px;
 }
 .text5{
     width: 632px;
     display: inline-block;
-    margin: 27px 0px;
+    margin-top: 27px;
 }
 .text5 h5{
     font-size: 18px;
@@ -298,10 +298,12 @@
     font-family: 'Open Sans', sans-serif;
     color: white;
     line-height: 32px;
+    margin: 0px;
 }
 .text6{
     width: 141px;
     display: inline-block;
+    margin: 27px 0px;
 }
 .more{
     width: 94px;
@@ -314,6 +316,7 @@
     font-size: 18px;
     font-weight: 700px;
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
 }
 .arrow{
     display: inline-block;
@@ -323,13 +326,12 @@
     left: 9px;
 }
 .block2{
-    width: 1461px;
+    width: 1462px;
     margin: auto;
 }
 .photo2{
     width: 1461px;
     height: 985px;
-    margin-top: 250px;
     background-image: url(../img/image2.png);
 }
 .coolicon{
@@ -408,7 +410,8 @@
 .top1 h1{
     font-size: 64px;
     font-weight: 700;
-    margin-top:49px;
+    margin-top:24px;
+    margin-bottom: 0px;
     color: white;
     font-family: 'Open Sans', sans-serif;
     line-height: 87px;
@@ -425,6 +428,7 @@
     word-spacing: 1px;
     font-family: 'Open Sans', sans-serif;
     line-height: 32px;
+    text-align: center;
 }
 .top3{
     width: 150px;
@@ -447,7 +451,7 @@
     left: 9px;
 }
 .block3{
-    width: 1463px;
+    width: 1462px;
     height: 1120px;
     margin: auto;
 }
@@ -463,11 +467,10 @@
     margin-top: 342px;
 }
 .indo{
-    width: 404px;
+    width: 433px;
     display: inline-block;
     position: relative;
     left: 86px;
-    top: -10px;
 }
 .indo p{
     display: inline-block;
@@ -476,6 +479,8 @@
     font-size: 18px;
     font-weight: 700px;
     font-family: 'Open Sans', sans-serif;
+    padding-left: 24px;
+    
 }
 .indo h1{
     width: 555px;
@@ -484,8 +489,6 @@
     font-weight: 700px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 27px;
-    position: relative;
-    left: -90px;
     line-height: 87px;
 }
 .indo h5{
@@ -495,16 +498,13 @@
     font-weight: 400px;
     font-family: 'Open Sans', sans-serif;
     margin-top: 27px;
-    position: relative;
-    left: -90px;
     line-height: 32px;
 }
 .moree{
     width: 194px;
-    display: inline-block;
     position: relative;
-    margin-top: 27px;
-    left: -5px;
+    left: 86px;
+    
 }
 .moree h6{
     width: 94px;
@@ -513,6 +513,8 @@
     font-size: 18px;
     font-weight: 700px;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 26px;
+    margin-bottom: 0px;
 }
 .arroww{
     display: inline-block;
@@ -527,29 +529,31 @@
     margin-top: 226px;
 }
 .down1{
-    width: 1460px;
-    height: 130px;
+    width: 1920px;
+    background-color: black;
+}
+.down2{
+    width: 1462px;
     margin: auto;
 }
-.down1 h1{
+.down2 h1{
     width: 173px;
-    height: 120px;
     color:  white;
     font-size: 48px;
     font-weight: 700px;
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    display: inline-block;
 }
-.down1 h5{
+.down2 h5{
     width: 200px;
     color:  white;
-    height: 120px;
     font-size: 22px;
     font-weight: 400px;
     font-family: 'DM Sans', sans-serif;
     display: inline-block;
     position: relative;
-    left: 950px;
-    top: -105px;
+    left: 750px;
 
 }
 .button1{
@@ -561,8 +565,7 @@
     border-radius: 8px;
     padding: 24px 75px;
     position: relative;
-    left: 1017px;
-    top: -110px;
+    left: 840px;
 }
 .divider{
     width: 1460px;
@@ -570,14 +573,14 @@
     margin: auto;
     background-color: white;
     opacity: 0.3;
-    position: relative;
-    top: -150px;
+    margin-top: 40px;
+    margin-bottom: 55px;
 
 }
 .footer{
     width: 1460px;
     margin: auto;
-    position: relative;
+    background-color: black;
 }
 .column1{
     width: 399px;
@@ -686,7 +689,8 @@
  }
  .roww{
     width: 1379px;
-    margin: 136px auto;
+    margin:  auto;
+    margin-top: 136px;
  }
  .roww1{
     width: 173px;
@@ -730,5 +734,5 @@
     opacity: 50%;
     margin: auto;
     margin-top: 160px;
-    margin-bottom: 118px;
+    padding-bottom: 118px;
  }
