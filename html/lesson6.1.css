@@ -1,17 +1,17 @@
 *{
     box-sizing: border-box;
 }
+.header{
+    margin: auto;
+}
 .head{
     width: 1920px;
     height: 1573px;
     background-image: url(../img/fon.png);
 }
 .start{
-    width: 81px;
-    display: inline-block;
-    position: relative;
-    top: -150px;
-    left: 85px;
+    width: 1751px;
+    margin:  auto;
 }
 .start h1{
     width: 81px;
@@ -24,7 +24,6 @@
     width: 480px;
     display: inline-block;
     position: relative;
-    top: -150px;
     left: 887px;
 }
 .link a{
@@ -42,7 +41,6 @@
     width: 108px;
     display: inline-block;
     position: relative;
-    top: -150px;
     left: 1100px;
 }
 .search img{
@@ -91,7 +89,7 @@
     writing-mode: vertical-rl;
     position: relative;
     top: 350px;
-    left: -605px;
+    left: 79px;
 }
 .social{
     width: 30px;
@@ -119,7 +117,7 @@
     display: inline-block;
     position: relative;
     top: 290px;
-    left: -330px;
+    left: 330px;
 }
 .line{
     width: 72px;
