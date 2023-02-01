@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.block1{
+    width: 1600px;
+}
+.logo{
+    width: 1600px;
+    height: 900px;
+    background-image: url(../img/Mask_group.png);
+}
+.header{
+    width: 1175px;
+    margin: auto;
+    display: flex;
+}
+.col1{
+    width: 262px;
+    height: 151px;
+    padding-top: 8px;
+    display: flex;
+}
+.line{
+    width: 74px;
+    height: 1px;
+    background-color:  white;
+    margin-top: 9px;
+}
+
+.col2{
+    width: 76px;
+    display: flex;
+    padding-top: 68px;
+}
+.col2 a{
+    font-size: 15px;
+    font-weight: 500px;
+    color: white;
+    text-decoration: none;
+}
+.col3{
+    width: 197px;
+    display: flex;
+    padding-top: 68px;
+    margin-left: 20px;
+}
+.col3 a{
+    font-size: 15px;
+    font-weight: 500px;
+    color: white;
+    text-decoration: none;
+}
+.col4{
+    width: 200px;
+    display: flex;
+    padding-top: 68px;
+    margin-left: 20px;
+}
+.col4 a{
+    font-size: 15px;
+    font-weight: 500px;
+    color: white;
+    text-decoration: none;
+}
+.col5{
+    width: 153px;
+    display: flex;
+    padding-top: 68px;
+    margin-left: 20px;
+}
+.col5 a{
+    font-size: 15px;
+    font-weight: 500px;
+    color: white;
+    text-decoration: none;
+}
+.col6{
+    width: 53px;
+    display: flex;
+    padding-top: 68px;
+    margin-left: 20px;
+}
+.col6 a{
+    font-size: 15px;
+    font-weight: 500px;
+    color: white;
+    text-decoration: none;
+}
+.basket{
+    width: 135px;
+    height: 40px;
+    display: flex;
+    padding-top: 55px;
+    margin-left: 20px;
+}
+.elipse{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #281C14;
+}
+.elipse img{
+    width: 24px;
+    height: 24px;
+    margin: 8px;
+}
+.price h3{
+    width: 77px;
+    font-size: 15px;
+    font-weight: 700px;
+    color: white;
+    text-decoration: none;
+    margin-left: 8px;
+    display: flex;
+}
+.down{
+    width: 10px;
+    height: 5px;
+    display: flex;
+    padding-top: 19px;
+    margin-left: 6px;
+}
+.down img{
+    width: 10px;
+    height: 5px;
+    display: flex; 
+}
+.row{
+    width: 653px;
+    position: relative;
+    top: 60px;
+    left: 212px;
+}
+.row1{
+    width: 653px;
+}
+.row1 h3{
+    font-size: 73px;
+    font-weight: 800px;
+    color: white;
+}
+.row1 p{
+    width: 568px;
+    font-size: 21px;
+    font-weight: 400px;
+    color: white;
+    position: relative;
+    margin-top: -60px;
+}
+.button{
+    width: 287px;
+    height: 81px;
+    background-color: #C98D5A;
+    border-radius: 56px;
+    margin-top: 80px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px;
+}
+.block2{
+    width: 1600px;
+    background-color: #EBEBEB;
+}
+.title{
+    width: 651px;
+    margin: auto;
+}
+.title h4{
+    width: 791px;
+    margin: auto;
+    font-size: 60px;
+    font-weight: 800;
+    color: #151616;
+    padding-top: 60px;
+}
+.vector{
+    width: 850px;
+    margin: auto;
+    margin-top: 36px;
+    display: flex;
+}
+.vector img{
+    width: 43px;
+    height: 22px;
+    display: flex;
+}
+.line2{
+    width: 390px;
+    height: 4px;
+    background-color: #767676;
+    position: relative;
+    top: 9px;
+    left: -7px;
+}
+.mid{
+    width: 14px;
+    height: 14px;
+    display: flex;
+}
+.mid img{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 4px;
+    left: -9px;
+}
+.line3{
+    width: 390px;
+    height: 4px;
+    background-color: #767676;
+    position: relative;
+    top: 9px;
+    left: -10px;
+    display: flex;
+}
+.vector1{
+    width: 43px;
+    display: flex;
+}
+.vector1 img{
+    width: 43px;
+    height: 22px;
+    display: flex;
+    position: relative;
+    left: -16px;
+}
+.column-main{
+    width: 1039px;
+    margin: 51px auto;
+    display: flex;
+}
+.column1{
+    width: 244px;
+}
+.column1 img{
+    width: 106px;
+    height: 106px;
+    opacity: 50%;
+    position: relative;
+    left: 69px;
+}
+.line4{
+    width: 216px;
+    height: 3px;
+    background-color: #767676;
+    margin: auto;
+    margin-top: 22px;
+}
+.column1 p{
+    width: 244px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #151616;
+    text-align: center;
+}
