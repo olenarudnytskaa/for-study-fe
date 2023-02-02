@@ -5,35 +5,36 @@
     font-family: 'Montserrat', sans-serif;
 }
 .block1{
-    width: 1600px;
+    width: 100%;
 }
 .logo{
-    width: 1600px;
+    width: 100%;
     height: 900px;
     background-image: url(../img/Mask_group.png);
 }
 .header{
-    width: 1175px;
+    width: 90%;
     margin: auto;
     display: flex;
 }
 .col1{
-    width: 262px;
+    width: 20%;
     height: 151px;
     padding-top: 8px;
     display: flex;
 }
 .line{
-    width: 74px;
+    width: 76px;
     height: 1px;
     background-color:  white;
     margin-top: 9px;
 }
 
 .col2{
-    width: 76px;
+    width: 12%;
     display: flex;
     padding-top: 68px;
+    margin-left: 40px;
 }
 .col2 a{
     font-size: 15px;
@@ -42,7 +43,7 @@
     text-decoration: none;
 }
 .col3{
-    width: 197px;
+    width: 23%;
     display: flex;
     padding-top: 68px;
     margin-left: 20px;
@@ -54,7 +55,7 @@
     text-decoration: none;
 }
 .col4{
-    width: 200px;
+    width: 23%;
     display: flex;
     padding-top: 68px;
     margin-left: 20px;
@@ -66,7 +67,7 @@
     text-decoration: none;
 }
 .col5{
-    width: 153px;
+    width: 13%;
     display: flex;
     padding-top: 68px;
     margin-left: 20px;
@@ -78,7 +79,7 @@
     text-decoration: none;
 }
 .col6{
-    width: 53px;
+    width: 13%;
     display: flex;
     padding-top: 68px;
     margin-left: 20px;
@@ -90,7 +91,7 @@
     text-decoration: none;
 }
 .basket{
-    width: 135px;
+    width: 13%;
     height: 40px;
     display: flex;
     padding-top: 55px;
@@ -129,16 +130,16 @@
     display: flex; 
 }
 .row{
-    width: 653px;
+    width: 80%;
     position: relative;
-    top: 60px;
+    top: 100px;
     left: 212px;
 }
 .row1{
-    width: 653px;
+    width:  80%;
 }
 .row1 h3{
-    font-size: 73px;
+    font-size: 50px;
     font-weight: 800px;
     color: white;
 }
@@ -148,10 +149,9 @@
     font-weight: 400px;
     color: white;
     position: relative;
-    margin-top: -60px;
 }
 .button{
-    width: 287px;
+    width: 28%;
     height: 81px;
     background-color: #C98D5A;
     border-radius: 56px;
@@ -161,11 +161,12 @@
     padding: 30px;
 }
 .block2{
-    width: 1600px;
+    width: 100%;
     background-color: #EBEBEB;
+    padding-bottom: 33px;
 }
 .title{
-    width: 651px;
+    width: 51%;
     margin: auto;
 }
 .title h4{
@@ -177,7 +178,7 @@
     padding-top: 60px;
 }
 .vector{
-    width: 850px;
+    width: 65%;
     margin: auto;
     margin-top: 36px;
     display: flex;
@@ -228,7 +229,7 @@
     left: -16px;
 }
 .column-main{
-    width: 1039px;
+    width: 83%;
     margin: 51px auto;
     display: flex;
 }
@@ -255,4 +256,550 @@
     font-weight: 500;
     color: #151616;
     text-align: center;
+}
+.column2{
+    width: 231px;
+    margin-left: 36px;
+}
+.column2 img{
+    width: 106px;
+    height: 106px;
+    position: relative;
+    left: 69px;
+    opacity: 50%;
+}
+.line5{
+    width: 216px;
+    height: 3px;
+    background-color: #767676;
+    margin: auto;
+    margin-top: 22px;
+}
+.column2 p{
+    width: 244px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #151616;
+    text-align: center;
+}
+.column3{
+    width: 223px;
+    margin-left: 36px;
+}
+.column3 img{
+    width: 106px;
+    height: 106px;
+    position: relative;
+    left: 69px;
+    opacity: 50%;
+}
+.line6{
+    width: 216px;
+    height: 3px;
+    background-color: #767676;
+    margin: auto;
+    margin-top: 22px;
+}
+.column3 p{
+    width: 244px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #151616;
+    text-align: center;
+}
+.column4{
+    width: 233px;
+    margin-left: 36px;
+}
+.column4 img{
+    width: 106px;
+    height: 106px;
+    position: relative;
+    left: 69px;
+    opacity: 50%;
+}
+.line7{
+    width: 216px;
+    height: 3px;
+    background-color: #767676;
+    margin: auto;
+    margin-top: 22px;
+}
+.column4 p{
+    width: 244px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #151616;
+    text-align: center;
+}
+.block3{
+    width: 100%;
+    height: 860px;
+    background-image: url(../img/Mask2.png);
+}
+.top{
+    width: 701px;
+    margin: auto;
+    padding-top: 53px;
+}
+.top p{
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+.polosa{
+    width: 85%;
+    display: flex;
+    margin: auto;
+}
+.polos1{
+    width: 252px;
+    height: 56px;
+    border-radius: 44px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 15px 45px;
+    background-color: transparent;
+    color: #C4C4C4;
+    border-color: 1px solid #C4C4C4;
+}
+.polos1:hover{
+    background-color: #C98D5A;
+    color: #151617;
+}
+.polos2{
+    width: 138px;
+    height: 56px;
+    margin-left: 12px;
+    border-radius: 44px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 15px 45px;
+    background-color: transparent;
+    color: #C4C4C4;
+    border-color: 1px solid #C4C4C4;
+}
+.polos2:hover{
+    background-color: #C98D5A;
+    color: #151617;
+}
+.polos3{
+    width: 158px;
+    height: 56px;
+    margin-left: 12px;
+    border-radius: 44px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 15px 45px;
+    background-color: transparent;
+    color: #C4C4C4;
+    border-color: 1px solid #C4C4C4;
+}
+.polos3:hover{
+    background-color: #C98D5A;
+    color: #151617;
+}
+.polos4{
+    width: 175px;
+    height: 56px;
+    margin-left: 12px;
+    border-radius: 44px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 15px 45px;
+    background-color: transparent;
+    color: #C4C4C4;
+    border-color: 1px solid #C4C4C4;
+}
+.polos4:hover{
+    background-color: #C98D5A;
+    color: #151617;
+}
+.polos5{
+    width: 174px;
+    height: 56px;
+    margin-left: 12px;
+    border-radius: 44px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 15px 45px;
+    background-color: transparent;
+    color: #C4C4C4;
+    border-color: 1px solid #C4C4C4;
+}
+.polos5:hover{
+    background-color: #C98D5A;
+    color: #151617;
+}
+.polos6{
+    width: 154px;
+    height: 56px;
+    margin-left: 12px;
+    border-radius: 44px;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 15px 45px;
+    background-color: transparent;
+    color: #C4C4C4;
+    border-color: 1px solid #C4C4C4;
+}
+.polos6:hover{
+    background-color: #C98D5A;
+    color: #151617;
+}
+.items{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 80px;
+}
+.items1{
+    width: 26%;
+    height: 404px;
+    background-image: url(../img/backgroung1.png);
+    border-radius: 0px 30px 30px 0px;
+}
+.items1 p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #C4C4C4;
+    text-align: center;
+    padding-top: 2px;
+}
+.items1 img{
+    width: 216px;
+    height: 197px;
+    margin-left: 30px;
+}
+.items1 h6{
+    width: 233px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #C4C4C4;
+    text-align: center;
+    margin: auto;
+}
+.arrow1{
+    width: 235px;
+    height: 35px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 21px;
+    display: flex;
+}
+.arrow1 img{
+    width: 33px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.orange1{
+    width: 73px;
+    height: 35px;
+    background-color: #F59B4D;
+    margin-left: 120px;
+}
+.orange1 h6{
+    width: 73px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 5px;
+    margin: 0px;
+    color: #1F1F1F;
+}
+.items2{
+    width: 26%;
+    height: 404px;
+    background-image: url(../img/backgroung1.png);
+    margin-left: 54px;
+    border-radius: 0px 30px 30px 0px;
+}
+.items2 p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #C4C4C4;
+    text-align: center;
+    padding-top: 2px;
+}
+.items2 img{
+    width: 216px;
+    height: 197px;
+    margin-left: 30px;
+}
+.items2 h6{
+    width: 233px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #C4C4C4;
+    text-align: center;
+    margin: auto;
+}
+.arrow2{
+    width: 235px;
+    height: 35px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 21px;
+    display: flex;
+}
+.arrow2 img{
+    width: 33px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.orange2{
+    width: 73px;
+    height: 35px;
+    background-color: #F59B4D;
+    margin-left: 120px;
+}
+.orange2 h6{
+    width: 73px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 5px;
+    margin: 0px;
+    color: #1F1F1F;
+}
+.items3{
+    width: 26%;
+    height: 404px;
+    background-image: url(../img/backgroung1.png);
+    margin-left: 54px;
+    border-radius: 0px 30px 30px 0px;
+}
+.items3 p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #C4C4C4;
+    text-align: center;
+    padding-top: 2px;
+}
+.items3 img{
+    width: 216px;
+    height: 197px;
+    margin-left: 30px;
+}
+.items3 h6{
+    width: 233px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #C4C4C4;
+    text-align: center;
+    margin: auto;
+}
+.arrow3{
+    width: 235px;
+    height: 35px;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 21px;
+    display: flex;
+}
+.arrow3 img{
+    width: 33px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.orange3{
+    width: 73px;
+    height: 35px;
+    background-color: #F59B4D;
+    margin-left: 120px;
+}
+.orange3 h6{
+    width: 73px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 5px;
+    margin: 0px;
+    color: #1F1F1F;
+}
+.block4{
+    width: 100%;
+    margin: auto;
+    background-color: #E5E5E5;
+    padding-top: 49px;
+}
+.block4 h3{
+    font-size: 60px;
+    font-weight: 800;
+    color: #151616;
+    margin: auto;
+    text-align: center;
+}
+.vector5{
+    width: 850px;
+    margin: auto;
+    margin-top: 36px;
+    display: flex;
+}
+.vector5 img{
+    width: 43px;
+    height: 22px;
+    display: flex;
+}
+.line8{
+    width: 390px;
+    height: 4px;
+    background-color: #767676;
+    position: relative;
+    top: 9px;
+    left: -7px;
+}
+.mid1{
+    width: 14px;
+    height: 14px;
+    display: flex;
+}
+.mid1 img{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 4px;
+    left: -9px;
+}
+.line8{
+    width: 390px;
+    height: 4px;
+    background-color: #767676;
+    position: relative;
+    top: 9px;
+    left: -10px;
+    display: flex;
+}
+.vector6{
+    width: 43px;
+    display: flex;
+}
+.vector6 img{
+    width: 43px;
+    height: 22px;
+    display: flex;
+    position: relative;
+    left: -16px;
+}
+.about1{
+    width: 1168px;
+    margin: auto;
+    margin-top: 42px;
+}
+.about1 p{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.about2{
+    width: 283px;
+    position: relative;
+    left: 890px;
+}
+.about2 p{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+}
+.block5{
+    width: 100%;
+    height: 860px;
+    background-image: url(../img/Mask2.png);
+}
+.block5 h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    width: 627px;
+    margin: auto;
+    padding-top: 50px;
+}
+.photo0{
+    width: 75%;
+    margin: auto;
+    margin-top: 64px;
+    display: flex;
+}
+.photo1{
+    width: 301px;
+    height: 165px;
+}
+.photo1 img{
+    width: 301px;
+    height: 165px;
+}
+.photo01{
+    width: 301px;
+    height: 240px;
+    margin-top: 30px;
+}
+.photo01 img{
+    width: 301px;
+    height: 240px;
+}
+.photo2 img{
+    width: 301px;
+    height: 441px;
+    margin-left: 30px;
+}
+.photo3{
+    width: 301px;
+    height: 240px;
+    margin-left: 30px;
+}
+.photo3 img{
+    width: 301px;
+    height: 240px;
+}
+.photo03{
+    width: 301px;
+    height: 165px;
+    margin-top: 30px;
+}
+.photo03 img{
+    width: 301px;
+    height: 165px;
+}
+.footer{
+    width: 90%;
+    height: 100px;
+    margin: 90px auto;
+    display: flex;
+}
+.footer img{
+    width: 171px;
+    height: 91px;
+    display: flex;
+}
+.location{
+    width: 565px;
+    position: relative;
+    left: 102px;
+}
+.location h3{
+    font-size: 20px;
+    font-weight: 700px;
+    color: white;
+}
+.location p{
+    font-size: 16px;
+    font-weight: 400px;
+    color: white;
+}
+.numb{
+    width: 265px;
+    position: relative;
+    left: 169px;
+    top: 15px;
+}
+.numb h3{
+    font-size: 24px;
+    font-weight: 700px;
+    color: white;
 }
