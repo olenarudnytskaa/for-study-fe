@@ -162,6 +162,7 @@
 }
 .block2{
     width: 100%;
+    height: 550px;
     background-color: #EBEBEB;
     padding-bottom: 33px;
 }
@@ -233,104 +234,33 @@
     margin: 51px auto;
     display: flex;
 }
-.column1{
-    width: 244px;
-}
-.column1 img{
-    width: 106px;
-    height: 106px;
-    opacity: 50%;
-    position: relative;
-    left: 69px;
-}
-.line4{
+.column-child-line{
     width: 216px;
     height: 3px;
     background-color: #767676;
     margin: auto;
-    margin-top: 22px;
 }
-.column1 p{
+.column-child p{
     width: 244px;
     font-size: 20px;
     font-weight: 500;
     color: #151616;
     text-align: center;
+    position: relative;
+    left: -20px;
+    top: 20px;
 }
-.column2{
-    width: 231px;
-    margin-left: 36px;
-}
-.column2 img{
+.column-child img{
     width: 106px;
     height: 106px;
-    position: relative;
-    left: 69px;
     opacity: 50%;
-}
-.line5{
-    width: 216px;
-    height: 3px;
-    background-color: #767676;
-    margin: auto;
-    margin-top: 22px;
-}
-.column2 p{
-    width: 244px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #151616;
-    text-align: center;
-}
-.column3{
-    width: 223px;
-    margin-left: 36px;
-}
-.column3 img{
-    width: 106px;
-    height: 106px;
     position: relative;
-    left: 69px;
-    opacity: 50%;
+    left: 51px;
 }
-.line6{
-    width: 216px;
-    height: 3px;
-    background-color: #767676;
-    margin: auto;
-    margin-top: 22px;
-}
-.column3 p{
-    width: 244px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #151616;
-    text-align: center;
-}
-.column4{
-    width: 233px;
-    margin-left: 36px;
-}
-.column4 img{
-    width: 106px;
-    height: 106px;
-    position: relative;
-    left: 69px;
-    opacity: 50%;
-}
-.line7{
-    width: 216px;
-    height: 3px;
-    background-color: #767676;
-    margin: auto;
-    margin-top: 22px;
-}
-.column4 p{
-    width: 244px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #151616;
-    text-align: center;
+.column-child{
+    width: 120px;
+    display: flex;
+    margin-left: 58px;
 }
 .block3{
     width: 100%;
