@@ -99,14 +99,14 @@
         margin-top: 14px;
 }
 .items{
-    width: 78%;
+    width: 84%;
     margin: auto;
     margin-top: 39px;
     display: flex;
 }
 .items1{
     background-image: url(../img/tea.png);
-    width: 35%;
+    width: 350px;
     height: 350px;
     border-radius: 200px;
     border: 9px solid #81613B;
@@ -137,7 +137,7 @@
 }
 .items2{
     background-image: url(../img/cake.png);
-    width: 35%;
+    width: 350px;
     height: 350px;
     border-radius: 200px;
     border: 9px solid #81613B;
@@ -169,7 +169,7 @@
 }
 .items3{
     background-image: url(../img/foods.png);
-    width: 35%;
+    width: 350px;
     height: 350px;
     border-radius: 200px;
     border: 9px solid #81613B;
@@ -177,7 +177,7 @@
     margin-left: 30px;
 }
 .circle3{ 
-    width: 100%;
+    width: 350px;
     height: 350px;
     border-radius: 200px;
     opacity: 100%;
@@ -428,10 +428,8 @@
     height: 32px;
     }
 }
-@media screen (max-width:1920px);
-@media screen (min-width: 390px) {
-    .logo1{
-        <i class="fas fa-bars"></i>
+@media(380px<= width =1440px){
+    .items{
+        flex-direction: column;
     }
-    
 }
