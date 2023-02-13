@@ -10,6 +10,7 @@
     width: 100%;
     height: 80px;
     display: flex;
+    background-size: 100%;
     .logo{
         width: 13%;
         position: relative;
@@ -67,7 +68,8 @@
 .block2{
     width: 100%;
     height: 520px;
-    background-image: url(../img/coffee1.png);
+    background-image: url(../img/coffee1.png) ;
+    background-repeat: no-repeat;
     p{
         width: 38%;
         font-size: 110px;
@@ -80,6 +82,7 @@
 }
 .block3{
     width: 100%;
+    background-size: 100%;
         h3{
         width: 6%;
         font-size: 40px;
@@ -99,7 +102,7 @@
         margin-top: 14px;
 }
 .items{
-    width: 84%;
+    width: 1150px;
     margin: auto;
     margin-top: 39px;
     display: flex;
@@ -111,6 +114,7 @@
     border-radius: 200px;
     border: 9px solid #81613B;
     overflow: hidden;
+    margin-left: 30px;
 }
 .circle1{ 
     width: 100%;
@@ -229,6 +233,7 @@
     height: 600px;
     margin-top: 62px;
     background-image: url(../img/cafe1.png);
+    background-repeat: no-repeat;
     h1{
         width: 89px;
         color: white;
@@ -288,6 +293,7 @@
     width: 100%;
     height: 406px;
     background-color: rgba(129, 97, 59, 0.2);
+    background-size: 100%;
     h1{
         width: 148px;
     font-size: 40px;
@@ -382,6 +388,7 @@
     width: 100%;
     height: 180px;
     background-color: black;
+    background-size: 100%;
 }
 .lf-rh{
     width: 70%;
@@ -428,8 +435,88 @@
     height: 32px;
     }
 }
-@media(380px<= width =1440px){
-    .items{
-        flex-direction: column;
+@media(max-width: 414px) {
+    .block1 .logo{
+       position: relative;
+       left: 14px;
     }
-}
+    .items {
+        width: 414px;
+      flex-direction: column;
+    }
+    .items1{
+        width: 300px;
+        height: 300px;
+        margin:auto;
+    }
+    .items2{
+        width: 300px;
+        height: 300px;
+        margin:30px auto;
+    }
+    .items3{
+        width: 300px;
+        height: 300px;
+        margin:auto;
+    }
+    .menu h4{
+        width: 40%;
+    }
+    .block3 h3{
+        width: 20%;
+    }
+    .block5{
+        height: 443px;
+    }
+    .block5 h1{
+        padding-top: 50px;
+    }
+    .in{
+        width: 90%;
+        height: 217px;
+        margin: auto;
+        margin-top: 49px;
+    }
+    .top{
+        flex-direction: column;
+        width: 318px;
+
+    }
+    .top2{
+        width: 318px;
+        line-height: 2;
+        font-style: normal;
+    }
+    .down{
+        flex-direction: column;
+        width: 318px;
+        margin-top: 34px;
+    }
+    .down2{
+        width: 318px;
+        line-height: 2;
+    }
+    .block6{
+        float: none;
+    }
+    .lf-rh{
+        padding-top: 0px;
+    }
+    .left{
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+    .right{
+        float: none;
+        padding-top: 20px;
+        margin: auto;
+        text-align: center;
+    }
+    .corner{
+        margin-top: 16px;
+        margin-right: 10px;
+        padding-bottom: 20px;
+    }
+  }
+ 

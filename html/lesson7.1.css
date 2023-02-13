@@ -168,7 +168,7 @@
     padding-bottom: 33px;
 }
 .title{
-    width: 51%;
+    width: 791px;
     margin: auto;
 }
 .title h4{
@@ -181,10 +181,11 @@
     text-align: center;
 }
 .vector{
-    width: 65%;
+    width: 80%;
     margin: auto;
     margin-top: 36px;
     display: flex;
+    justify-content: center;
 }
 .vector img{
     width: 43px;
@@ -269,7 +270,7 @@
     width: 100%;
     height: 860px;
     background-image: url(../img/Mask2.png);
-    background-size: 100%;
+    background-size: 111%;
 }
 .top{
     width: 701px;
@@ -286,6 +287,7 @@
     width: 85%;
     display: flex;
     margin: auto;
+    justify-content: center;
 }
 .polos1{
     width: 252px;
@@ -387,12 +389,13 @@
     margin: auto;
     display: flex;
     margin-top: 80px;
+    justify-content: center;
 }
 .items1{
     width: 26%;
     height: 390px;
     background-image: url(../img/backgroung1.png);
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 30px 30px 0px; 
     background-size: 117%;
 }
 .items1 p{
@@ -420,7 +423,7 @@
     height: 35px;
     background-color: transparent;
     margin: auto;
-    margin-top: 21px;
+    margin-top: 13px;
     display: flex;
 }
 .arrow1 img{
@@ -477,7 +480,7 @@
     height: 35px;
     background-color: transparent;
     margin: auto;
-    margin-top: 21px;
+    margin-top: 13px;
     display: flex;
 }
 .arrow2 img{
@@ -534,7 +537,7 @@
     height: 35px;
     background-color: transparent;
     margin: auto;
-    margin-top: 21px;
+    margin-top: 13px;
     display: flex;
 }
 .arrow3 img{
@@ -663,6 +666,7 @@
     margin: auto;
     margin-top: 64px;
     display: flex;
+    justify-content: center;
 }
 .photo1{
     width: 301px;
@@ -705,10 +709,11 @@
     height: 165px;
 }
 .footer{
-    width: 90%;
+    width: 80%;
     height: 100px;
     margin: 90px auto;
     display: flex;
+    justify-content: space-between;
 }
 .footer img{
     width: 171px;
@@ -717,8 +722,6 @@
 }
 .location{
     width: 565px;
-    position: relative;
-    left: 102px;
 }
 .location h3{
     font-size: 20px;
@@ -733,7 +736,6 @@
 .numb{
     width: 265px;
     position: relative;
-    left: 169px;
     top: 15px;
 }
 .numb h3{
