@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Philosopher', sans-serif;
+}
+.header1{
+    width: 100%;
+    height: 1098px;
+    background-image: url(../img/banner1.png);
+}
+.header2{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.header3{
+    width: 152px;
+    padding-top: 40px;
+    display: flex;
+    p{
+        font-size: 40px;
+        font-weight: 400;
+        color: white ;
+        margin: 0px;
+    }
+    h6{
+        font-size: 40px;
+        font-weight: 400;
+        color: #FF9900;
+        margin: 0px;
+    }
+}
+.header4{
+    width: 541px;
+    display: flex;
+    padding-top: 50px;
+    margin: auto;
+    p{
+        font-size: 24px;
+        font-weight: 400;
+        color: #FF9900;
+        margin: 0px;
+    }
+    h6{
+        font-size: 24px;
+        font-weight: 400;
+        color: white ;
+        margin: 0px auto;
+    }
+}
