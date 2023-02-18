@@ -442,15 +442,15 @@
     height: 31px;
     display: none;
     margin-top: 25px;
-    position: relative;
-    left: 300px;
     overflow: hidden;
+    justify-content: end;
 }
 .mobile{
     width: 47px;
     height: 55px;
     background-color: transparent;
     margin: auto;
+    float: right;
     .mobile1{
         display: none;
     }
@@ -586,8 +586,7 @@
   @media (min-width: 1024px) and (max-width: 1365px){
     .burger{
         display: block;
-        position: relative;
-        left: 825px;
+
     }
     .logo1{
         display: none;
@@ -599,4 +598,4 @@
         width: 990px;
     }
   }
- 
+  @media (min-width: 320px) and (max-width: 413px)
