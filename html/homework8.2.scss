@@ -441,16 +441,14 @@
     width: 33px;
     height: 31px;
     display: none;
-    margin-top: 25px;
+    margin: 25px 20px;
     overflow: hidden;
-    justify-content: end;
 }
 .mobile{
     width: 47px;
     height: 55px;
     background-color: transparent;
     margin: auto;
-    float: right;
     .mobile1{
         display: none;
     }
@@ -462,8 +460,6 @@
     width: 225px;
     height: 281px;
     background-color: white;
-    position: relative;
-    right: 150px;
     text-align: center;
 }
 .category a{
@@ -480,7 +476,7 @@
     width: 225px;
     overflow: visible;
  }
-@media (min-width: 413px) and (max-width: 1025px) {
+@media (min-width: 414px) and (max-width: 1024px) {
     .block1 .logo{
        position: relative;
        left: 14px;
@@ -490,6 +486,7 @@
     }
     .burger{
         display: block;
+        margin-left: auto;
     }
     .items {
         width: 414px;
@@ -583,9 +580,10 @@
         padding-bottom: 20px;
     }
   }
-  @media (min-width: 1024px) and (max-width: 1365px){
+  @media (min-width: 1025px) and (max-width: 1365px){
     .burger{
         display: block;
+        margin-left: auto;
 
     }
     .logo1{
@@ -595,7 +593,136 @@
         width: 16%;
     }
     .items{
-        width: 990px;
+        width: 414px;
+       margin: 39px auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .items2{
+        margin: 30px auto;
+    }
+    .top2{
+        width: 582px;
+    }
+    .down2{
+        width: 582px;
     }
   }
-  @media (min-width: 320px) and (max-width: 413px)
+  @media (min-width: 644px) and (max-width: 990px){
+    .top2{
+        width: 582px;
+    }
+    .down2{
+        width: 582px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 413px) {
+        .block1 .logo{
+           position: relative;
+           left: 14px;
+        }
+        .logo1{
+            display: none;
+        }
+        .burger{
+            display: block;
+            margin-left: auto;
+        }
+        .items {
+            width: 310px;
+          flex-direction: column;
+        }
+        .items1{
+            width: 250px;
+            height: 250px;
+            margin:auto;
+            
+        }
+        .items2{
+            width: 250px;
+            height: 250px;
+            margin:30px auto;
+        }
+        .items3{
+            width: 250px;
+            height: 250px;
+            margin:auto;
+        }
+        .circle1 a{
+            position: relative;
+            top: 170px;
+        }
+        .circle2 a{
+            position: relative;
+            top: 170px;
+        }
+        .circle3 a{
+            position: relative;
+            top: 170px;
+        }
+        .menu h4{
+            width: 51%;
+        }
+        .block2 p{
+            width: 61%;
+        }
+        .block3 h3{
+            width: 20%;
+        }
+        .block5{
+            height: 443px;
+        }
+        .block5 h1{
+            padding-top: 50px;
+        }
+        .in{
+            width: 90%;
+            height: 241px;
+            margin: auto;
+            margin-top: 49px;
+        }
+        .top{
+            flex-direction: column;
+            width: 318px;
+    
+        }
+        .top2{
+            width: 269px;
+            line-height: 2;
+            font-style: normal;
+        }
+        .down{
+            flex-direction: column;
+            width: 318px;
+            margin-top: 34px;
+        }
+        .down2{
+            width: 269px;
+            line-height: 2;
+        }
+        .block6{
+            float: none;
+        }
+        .lf-rh{
+            padding-top: 0px;
+        }
+        .left{
+            float: none;
+            margin: auto;
+            text-align: center;
+        }
+        .right{
+            float: none;
+            padding-top: 20px;
+            margin: auto;
+            text-align: center;
+        }
+        .block6{
+            height: 200px;
+        }
+        .corner{
+            margin-top: 53px;
+            margin-right: 10px;
+            padding-bottom: 20px;
+        }
+}
