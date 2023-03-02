@@ -970,13 +970,14 @@ span{
     margin: auto;
    }
    .logo4{
-    width: 300px;
+    width: 280px;
     display: block;
     margin: auto;
     padding-left: 0px;
     text-align: center;
    }
    .logo4 p{
+    width: 280px;
     text-align: center;
     font-size: 35px;
    }
@@ -1032,6 +1033,10 @@ span{
     height: 280px;
     margin: auto;
    }
+   .img09{
+    width: 280px;
+    height: 280px;
+   }
    .block6{
     height: fit-content;
    }
@@ -1061,21 +1066,33 @@ span{
     margin-bottom: 20px;
    }
    .column1 p{
+    width: 260px;
     font-size: 23px;
+   }
+   .column1 h5{
+    width: 260px;
    }
    .column2{
     margin-left: 0px;
     margin-bottom: 20px;
    }
+   .column2 h5{
+    width: 260px;
+   }
    .column2 p{
+    width: 260px;
     font-size: 23px;
    }
    .column3{
     margin-left: 0px;
     margin-bottom: 20px;
    }
+   .column3 h5{
+    width: 260px;
+   }
    .column3 p{
     font-size: 23px;
+    width: 260px;
    }
    .column4{
     margin-left: 0px;
@@ -1088,9 +1105,11 @@ span{
     margin: auto;
    }
    .column4 h5{
+    width: 260px;
     font-size: 30px;
    }
    .column4 p{
+    width: 260px;
     font-size: 23px;
    }
    .column5{
@@ -1127,7 +1146,7 @@ span{
     flex-direction: column;
    }
    .footer p{
-    width: 300px;
+    width: 285px;
    }
 }
 @media (min-width: 415px) and (max-width: 1025px) {
