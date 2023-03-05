@@ -667,9 +667,12 @@ span{
         line-height: 1.5;
     }
 }
+.zero{
+    width: 26%;
+}
 .column4{
     width: 65%;
-    margin-left: 515px;
+    margin: auto;
     margin-top: 62px;
     display: flex;
     h5{
@@ -1148,6 +1151,9 @@ span{
    .footer p{
     width: 285px;
    }
+   .zero{
+    display: none;
+   }
 }
 @media (min-width: 415px) and (max-width: 1025px) {
     .burger{
@@ -1221,6 +1227,9 @@ span{
         width: 100%;
         height: 200px;
     }
+    .zero{
+        display: none;
+       }
 }
 @media (min-width: 1025px) and (max-width: 1600px) {
     .left{
@@ -1351,6 +1360,9 @@ span{
     .logo7 h6{
         margin: 10px 0px;
     }
+    .zero{
+        display: none;
+       }
 }
 @media (min-width: 1600px) and (max-width: 1891px) {
     .grid-container3 img{
@@ -1375,4 +1387,7 @@ span{
     .column3{
         margin-left: 50px;
     }
+    .zero{
+        display: none;
+       }
 }
