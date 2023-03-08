@@ -2,12 +2,118 @@
     font-family: 'Abhaya Libre', serif;
     font-family: 'Noto Serif', serif;
     font-family: 'Poppins', sans-serif;
-}
+} 
 .header {
-    width: 100%;
+    width: 1440px;
     margin: auto;
-    border: 2px;
 }
 .header2 {
     width: 90%;
+    margin: 22px auto;
+    display: flex;
+}
+.header3{
+    width: 15%;
+}
+.header4{
+    img{
+        float: right;
+    }
+}
+.header5{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    a{
+        color: #3D3935;
+        font-size: 13px;
+        font-weight: 500;
+    }
+}
+.research{
+    img{
+        margin-left: 6px;
+    }
+    input{
+        width: 100px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+}
+.line{
+    width: 60px;
+    border-left: 1px solid #b0b0b0;
+    margin-left: 30px; 
+}
+.last{
+    align-items: flex-end;
+}
+.block1{
+    background-image: url(../img/Image-1.png);
+    width: 100%;
+    height: 584px;
+    display: flex;
+}
+.left{
+        width: 50%;
+        float: left;
+        margin: 275px 90px;
+    h4{
+        font-size: 60px;
+        font-weight: 700;
+        color: #FFFFFF;
+        font-family: 'Abhaya Libre', serif;
+    }
+    p{
+        font-size: 13px;
+        font-weight: 500;
+        color: #FFFFFF;
+        font-family: 'Abhaya Libre', serif;
+        margin-top: 8px;
+    }
+}
+.right{
+    width: 33%;
+    margin: auto;
+}
+.top{
+    width: 407px;
+    height: 144px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+}
+img{
+        border-radius: 2px 0px 0px 2px;
+        padding: 5px;
+    }
+h4{
+    font-size: 9px;
+    height: 12px;
+    font-weight: 600;
+    color: #F39200;
+    margin:  19px auto;
+    padding-top: 15px;
+}
+p{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin:  19px auto;
+    padding-top: 15px;
+    display: block;
+}
+.middle{
+    width: 407px;
+    height: 144px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    margin: 24px 0px;
+
+}
+.down{
+    width: 407px;
+    height: 144px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
 }
