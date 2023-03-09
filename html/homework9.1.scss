@@ -617,9 +617,10 @@ span{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     margin-top: 10px;
+    gap: 50px;
+    height: 760px;
 }
 .column01{
-    height: 350px;
     h5{
         width: 360px;
         font-size: 30px;
@@ -636,7 +637,8 @@ span{
         color: #000;
         text-align: left;
         line-height: 1.5;
-        margin: 30px 0px;
+        padding-top: 30px;
+        margin: 0px;
     }
 }
 .together{
