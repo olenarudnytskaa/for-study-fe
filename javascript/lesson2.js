@@ -39,5 +39,55 @@
 
 
 //fourth task 
-for(let counter = 0; counter < 10; counter++)
-console.log(i);
+//равностороний треугольник
+//for(let counter = 0; counter < 10; counter++){
+    //for(let i = (0 + 1 + counter); i < 10; i++){
+        //document.write("&nbsp;")
+    //}
+    //for (let y = 0 + 1 + counter; y > 0; y--){
+        //document.write("*")
+    //}
+    //document.write("<br>")
+//}
+//ромб
+//for(let counter = 0; counter < 10; counter++){
+    //for(let i = (0 + 1 + counter); i < 10; i++){
+        //document.write("&nbsp;")
+    //}
+    //for (let y = 0 + 1 + counter; y > 0; y--){
+        //document.write("*")
+    //}
+    //document.write("<br>")
+//}
+       //for(let counter = 0; counter < 9; counter++){
+            //for(let i = (8 - counter); i < 8; i++){
+                //document.write("&nbsp;")
+            //}
+           //for (let y = 0 + counter ; y < 10; y++){
+                //document.write("*")
+            //}
+                //document.write("<br>")
+//}
+//прямоугольник
+//for(let counter = 0; counter < 5; counter++){
+    //for(let i = ( 0 + 1 + counter); i < 20; i++){
+        //document.write("*")
+    //}
+    //for (let y = 0 + 1 + counter; y > 0; y--){
+        //document.write("*")
+    //}
+    //document.write("<br>")
+//}
+
+//прямоугольный треугольник
+for ( let counter = 0; counter < 10; counter++){
+    for ( let i = (1 + counter ); i < 1; i ++ )
+    document.write("*")
+    document.write("<br>")
+}
+
+
+    
+
+
+
