@@ -80,11 +80,11 @@
 //}
 
 //прямоугольный треугольник
-for ( let counter = 0; counter < 10; counter++){
-    for ( let i = (1 + counter ); i < 1; i ++ )
-    document.write("*")
-    document.write("<br>")
-}
+//for ( let counter = 0; counter < 10; counter++){
+    //for ( let i = (1 + counter ); i < 10; i ++ )
+    //document.write("*")
+    //document.write("<br>")
+//}
 
 
     
