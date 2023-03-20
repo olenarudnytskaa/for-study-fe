@@ -1839,9 +1839,6 @@ img{
     .category2{
         width: 168px;
     }
-    .category1{
-        display: none;
-    }
     .cards{
         flex-direction: column;
     }
@@ -1890,4 +1887,9 @@ img{
     .block5{
         overflow: hidden;
     }
+}
+@media (min-width: 1023px) and (max-width: 1239px){
+.category1{
+    display: none;
+}
 }
