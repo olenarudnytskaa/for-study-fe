@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 } 
 .header {
-    width: 1440px;
+    width: 100%;
     margin: auto;
 }
 .header2 {
@@ -154,7 +154,7 @@
         margin-top: 29px;
     }
     p{
-        width: 692px;
+        width: 98%;
         font-size: 40px;
         font-weight: 700;
         color: #3D3D3C;
@@ -413,6 +413,9 @@
     height: 480px;
     background-color: #FFFFFF;
 }
+.card1:hover{
+    transform: rotateY(30deg) ;
+}
 .photo2{
     img{
         padding: 5px;
@@ -487,6 +490,9 @@
     background-color: #FFFFFF;
     margin-left: 32px;
 }
+.card2:hover{
+    transform: rotateY(30deg) ;
+}
 .title07{
     width: 90%;
     margin: auto;
@@ -530,6 +536,7 @@
 }
 .media{
     padding-top: 24px;
+    width: 100%;
 }
 .media-img{
     width: 230px;
@@ -539,7 +546,7 @@
     }
 }
 .long-line{
-    width: 992px;
+    width: 100%;
     border: 1px solid #3D3D3C;
     margin-top: 18px;
     margin-left: 26px;
@@ -547,6 +554,7 @@
 .block-down{
     display: flex;
     margin-top: 25px;
+    width: 100%;
 }
 .column-1{
     width: 123px;
@@ -567,7 +575,7 @@
 }
 .column-2{
     width: 156px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -585,7 +593,7 @@
 }
 .column-3{
     width: 153px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -603,7 +611,7 @@
 }
 .column-4{
     width: 123px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -621,7 +629,7 @@
 }
 .column-5{
     width: 154px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -639,7 +647,7 @@
 }
 .column-6{
     width: 169px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -662,6 +670,7 @@
 }
 .down-form{
     display: flex;
+    width: 100%;
 }
 .down-form-01{
     width: 375px;
@@ -679,10 +688,10 @@
     }
 }
 .down-form-02{
-    margin-left: 54px;
+    margin-left: auto;
 }
 .down-form-03{
-    margin-left: 68px;
+    margin-left: auto;
 }
 .mb-2{
     width: 406px;
@@ -780,4 +789,458 @@
         font-family: 'Poppins', sans-serif;
     }
 }
-
+.burger{
+    width: 33px;
+    height: 31px;
+    display: none;
+    margin: 15px 20px;
+    overflow: hidden;
+}
+.mobile{
+    width: 47px;
+    height: 55px;
+    margin: auto;
+    img{
+        width: 47px;
+    height: 38px;
+    }
+}
+.category01{
+    width: 200px;
+    height: 281px;
+    background-color:rgba(213, 202, 203, 1);
+    text-align: center;
+    margin-right:  25px;
+    
+}
+.category01 a{
+    width: 200px;
+    height: 281px;
+    color: #668E68 ;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    line-height: 3.5;
+}
+.burger:hover{
+    display: block;
+    width: 225px;
+    overflow: visible;
+ }
+ @media (min-width: 320px) and (max-width: 690px){
+    .burger{
+        display: block;
+        margin-left: auto;
+    }
+    .mobile{
+        display: block;
+    }
+    .header{
+        width: 100%;
+    }
+    .header5{
+        display: none ;
+    }
+    .header3{
+        width: auto;
+        padding-top: 5px;
+    }
+    .container1{
+        width: auto;
+    }
+    .container2{
+        margin-top: 20px;
+        width: auto;
+    }
+    .container1 p{
+        width: auto;
+        font-size: 30px;
+    }
+    .container2{
+        margin-left: 0px;
+    }
+    .word{
+        margin: 32px auto 13px auto;
+    }
+    .block2{
+        height: 2270px;
+    }
+    .container{
+       display: block;
+       height: 1364px;
+    }
+    .container1 img{
+        width: 100%;
+    }
+    .word2{
+        margin: 35px auto 25px auto;
+    }
+    .word3{
+        margin: 35px auto 25px auto;
+    }
+    .text2 h2{
+        font-size: 17px;
+    }
+    .up{
+        display: block;
+        height: fit-content;
+    }
+    .photo2 img{
+        width: 100%;
+    }
+    .text2{
+        background-color: #FFFFFF;
+    }
+    .text2 h6{
+        margin-top: 0px;
+        padding-top: 15px;
+    }
+    .down2{
+        display: block;
+        height: fit-content;
+    }
+    .photo3 img{
+        width: 100%;
+    }
+    .text3{
+        background-color: #FFFFFF;
+    }
+    .text3 h6{
+        margin-top: 0px;
+        padding-top: 15px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card2{
+        margin: 20px auto;
+    }
+    .card1{
+        margin: auto;
+    }
+    .title08 p{
+        font-size: 20px;
+    }
+    .block8{
+        height: 1470px;
+       }
+       .down-form{
+        flex-direction: column;
+       }
+       .down-form1{
+        width: 285px;
+       }
+       .down-form2{
+        margin-left: 0px;
+       }
+       .down-form3{
+        margin-left: 0px;
+       }
+       .block9{
+        height: 450px;
+       }
+       .block09{
+        flex-direction: column;
+       }
+       .block010{
+        height: fit-content;
+       }
+       .radio{
+        margin-left: 10px;
+       }
+       .btn-outline-secondary{
+        margin-left: 10px;
+       }
+       .block-up{
+        flex-direction: column;
+       }
+       .long-line{
+        width: 100%;
+        margin: 20px auto;
+       }
+       .block-down{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+       }
+       .column-2{
+        margin-left: 0px;
+        width: 138px;
+       }
+       .column-3{
+        margin-left: 0px;
+       }
+       .column-4{
+        margin-left: 0px;
+       }
+       .column-5{
+        margin-left: 0px;
+       }
+       .column-6{
+        margin-left: 0px;
+        width: 138px;
+       }
+       .down-form-02{
+        margin-left: 0px;
+       }
+       .down-form-03{
+        margin-left: 0px;
+       }
+       .mb-4{
+        width: 282px;
+       }
+       .down-form-01{
+        width: 282px;
+       }
+       .mb-2{
+        width: 282px;
+       }
+       .mb-3{
+        width: 282px;
+       }
+ }
+ @media (min-width: 320px) and (max-width: 321px){
+    .category01{
+        width: 120px;
+    }
+    .block2{
+        height: 1970px;
+    }
+}
+@media (min-width: 375px) and (max-width: 380px){
+    .category01{
+        width: 160px;
+    }
+    .container3{
+        margin-top: 45px;
+    }
+}
+@media (min-width: 515px) and (max-width: 1212px){
+    .burger{
+        display: block;
+        margin-left: auto;
+    }
+    .mobile{
+        display: block;
+    }
+    .header{
+        width: 100%;
+    }
+    .header5{
+        display: none ;
+    }
+    .header3{
+        width: auto;
+        padding-top: 5px;
+    }
+    .container{
+        display: block;
+        height: 960px
+    }
+    .container1 img{
+        width: 100%;
+    }
+    .container2{
+        display: flex;
+        margin: 20px auto;
+    }
+    .container3{
+        width: auto;
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card1{
+        margin: auto;
+    }
+    .card2{
+        margin: 20px auto;
+    }
+    .block8{
+        height: 1170px;
+       }
+       .down-form1{
+        width: 285px;
+       }
+       .down-form2{
+        margin:0px ;
+       }
+       .down-form3{
+        margin-left: 0px;
+       }
+       .block010{
+        height: fit-content;
+       }
+       .radio{
+        margin-left: 10px;
+       }
+       .btn-outline-secondary{
+        margin-left: 10px;
+       }
+       .block-up{
+        flex-direction: column;
+       }
+       .long-line{
+        width: 100%;
+        margin: 20px auto;
+       }
+       .block-down{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+       }
+       .column-2{
+        margin-left: 0px;
+        width: 138px;
+       }
+       .column-3{
+        margin-left: 0px;
+       }
+       .column-4{
+        margin-left: 0px;
+       }
+       .column-5{
+        margin-left: 0px;
+       }
+       .column-6{
+        margin-left: 0px;
+        width: 138px;
+       }
+       .down-form-02{
+        margin: 0px 20px 0px 20px;
+       }
+       .down-form-03{
+        margin-left: 0px;
+       }
+       .mb-4{
+        width: 282px;
+       }
+       .down-form-01{
+        width: 282px;
+       }
+       .mb-2{
+        width: 282px;
+       }
+       .mb-3{
+        width: 282px;
+       }
+ }
+ @media (min-width: 515px) and (max-width: 800px){
+    .block9{
+        height: 450px;
+     }
+    .block09{
+    flex-direction: column;
+    }
+    .block8{
+        height: 1430px;
+    }
+    .down-form{
+        display: block;
+    }
+    .down-form-02{
+        margin: 0px;
+    }
+    .container{
+        height: 1260px;
+    }
+    .container1 p{
+        width: auto;
+    }
+    .container2{
+        display: block;
+        margin: 20px auto;
+    }
+    .container3{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+ }
+ @media (min-width: 515px) and (max-width: 690px){
+    .cards{
+        flex-direction: column;
+    }
+ }
+ @media (min-width: 1212px) and (max-width: 1439px){
+    .photo{
+        display: none;
+    }
+    .last{
+        display: none;
+    } 
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card1{
+        margin: auto;
+    }
+    .card2{
+        margin: 20px auto;
+    }
+    .block-up{
+        flex-direction: column;
+       }
+    .long-line{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .block8{
+        height: 785px;
+    }
+    .container1 img{
+        width: 100%;
+    }
+    .container1{
+        width: 95%;
+    }
+ }
+ @media (min-width: 1500px) and (max-width: 1600px){
+    .cards{
+        width: 82%;
+        margin: 20px auto;
+    }
+ }
+ @media (min-width: 1600px) and (max-width: 1700px){
+    .cards{
+        width: 78%;
+        margin: 20px auto;
+    }
+ }
+ @media (min-width: 1700px) and (max-width: 1921px){
+    .cards{
+        width: 72%;
+        margin: 20px auto;
+    }
+    .media{
+        width: 100%;
+    }
+    .long-line{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .block-down{
+        width: 100%;
+        margin: 25px auto;
+    }
+    .column-2{
+        margin-left: auto;
+    }
+    .column-3{
+        margin-left: auto;
+    }
+    .column-4{
+        margin-left: auto;
+    }
+    .column-5{
+        margin-left: auto;
+    }
+    .column-6{
+        margin-left: auto;
+    }
+ }
