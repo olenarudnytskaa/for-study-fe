@@ -606,6 +606,10 @@ img{
     height: 744px;
     margin-top: 92px;
 }
+.block04{
+    width: 85%;
+    margin: auto;
+}
 .title3{
     width: 90%;
     margin: auto;
@@ -639,13 +643,14 @@ img{
     border: 1px solid #B5B7C3;
 }
 .cards{
-    width: 85%;
+    width: 95%;
     display: flex;
     margin: 28px auto;
 }
 .card1{
     background-color: #FFFFFF;
     height: 480px;
+    width: 407px;
     border-radius: 4px;
 }
 .card2{
@@ -726,6 +731,7 @@ img{
     background-color: #FFFFFF;
     margin-left: 20px;
     height: 480px;
+    width: 407px;
     border-radius: 4px;
 }
 .card03{
@@ -740,6 +746,7 @@ img{
     background-color: #FFFFFF;
     margin-left: 20px;
     height: 480px;
+    width: 407px;
     border-radius: 4px;
 }
 .card4{
@@ -1024,6 +1031,7 @@ img{
 }
 .media{
     padding-top: 24px;
+    width: 100%;
 }
 .media-img{
     width: 230px;
@@ -1033,7 +1041,7 @@ img{
     }
 }
 .long-line{
-    width: 992px;
+    width: 98%;
     border: 1px solid #3D3D3C;
     margin-top: 18px;
     margin-left: 26px;
@@ -1041,6 +1049,7 @@ img{
 .block-down{
     display: flex;
     margin-top: 25px;
+    width: 100%;
 }
 .column-1{
     width: 123px;
@@ -1061,7 +1070,7 @@ img{
 }
 .column-2{
     width: 156px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -1079,7 +1088,7 @@ img{
 }
 .column-3{
     width: 153px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -1097,7 +1106,7 @@ img{
 }
 .column-4{
     width: 123px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -1115,7 +1124,7 @@ img{
 }
 .column-5{
     width: 154px;
-    margin-left: 91px;
+    margin-left: auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -1133,7 +1142,7 @@ img{
 }
 .column-6{
     width: 169px;
-    margin-left: 91px;
+    margin-left:auto;
     h1{
         color: #3D3D3C;
         font-size: 18px;
@@ -1156,6 +1165,7 @@ img{
 }
 .down-form{
     display: flex;
+    width: 100%;
 }
 .down-form1{
     width: 375px;
@@ -1173,10 +1183,10 @@ img{
     }
 }
 .down-form2{
-    margin-left: 54px;
+    margin-left: auto;
 }
 .down-form3{
-    margin-left: 68px;
+    margin-left: auto;
 }
 .block9{
     width: 100%;
@@ -1777,8 +1787,8 @@ img{
    }
    .block-down{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
    }
    .column-2{
     margin-left: 0px;
