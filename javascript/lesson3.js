@@ -2,9 +2,9 @@ var styles = [ "джаз" , `блюз`] ;
 var stylesplus = styles.push(`рон-н-ролл`);
 console.log(styles)
 
- var styles = [`джаз`, `блюз`,`рон-н-ролл`] ;
+ var styles =  [`джаз`, `блюз`,`рон-н-ролл`] ;
  var removed = styles.splice( 1, 1, 'классика');
- console.log(styles)
+ console.log(styles, styles.length)
 
 var styles = [`джаз`, `блюз`,`рон-н-ролл`] ;
 var shifted = styles.shift();
