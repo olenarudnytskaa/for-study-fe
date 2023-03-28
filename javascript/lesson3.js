@@ -3,8 +3,11 @@ var stylesplus = styles.push(`рон-н-ролл`);
 console.log(styles)
 
  var styles =  [`джаз`, `блюз`,`рон-н-ролл`] ;
- var removed = styles.splice( 1, 1, 'классика');
- console.log(styles, styles.length)
+ var position = parseInt(styles.length /2);
+ var remove = styles.splice( position, 1, `классика`);
+ console.log(styles)
+
+
 
 var styles = [`джаз`, `блюз`,`рон-н-ролл`] ;
 var shifted = styles.shift();
@@ -18,7 +21,7 @@ console.log(styles)
 
 
 var age = prompt ("Введите свой возраст")
-var checkAge = age > 18  ? `true` : `Родители разрешили?`
+var checkAge = age >= 18  ? `true` : `Родители разрешили?`
  console.log(checkAge)
 
 
