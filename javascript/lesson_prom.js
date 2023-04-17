@@ -1,79 +1,56 @@
-const tablo = {
-    tablo: "Exchange Currency",
-}
-for (const props in tablo) {
-document.getElementById("logo01").innerHTML += (tablo[props]);
-}
-
-const AUD = {
-        nameCurrency: "AUD" ,
-        spaceName: '&emsp;',
-        saleCurrency: 12.83,
-        space: '&emsp;',
-        purchaseCurrency : 12.85 ,
-    };
-
-for (const props in AUD) {
-document.getElementById("logo").innerHTML += (AUD[props]);
-}
-
-const CAD = {
-    nameCurrency: "CAD" ,
-    spaceName: '&emsp;',
+const currency = [
+{
+    AUD: {
+    saleCurrency: 12.83,
+    purchaseCurrency : 12.85 ,
+    },
+    CAD: {
     saleCurrency: 13.21, 
-    space: '&emsp;',
     purchaseCurrency: 13.21,
-};
-
-for (const props in CAD) {
-    document.getElementById("logo1").innerHTML += (CAD[props]);
-}
-
-const CZK = {
-    nameCurrency:"CZK" ,
-    spaceName: '&emsp;',
+    },
+    CZK:{
     saleCurrency: 10.67, 
-    space: '&emsp;',
     purchaseCurrency: 15.67 ,
-};
-for (const props in CZK) {
-    document.getElementById("logo2").innerHTML += (CZK[props]);
-}
-
-const DKK = {
-    nameCurrency: "DKK " ,
-    spaceName: '&emsp;',
+    },
+    DKK: { 
     saleCurrency : 12.52,
-    space: '&emsp;',
     purchaseCurrency: 14.52,
-} ;
-for (const props in DKK) {
-    document.getElementById("logo3").innerHTML += (DKK[props]);
-}
-
-const HUF = {
-    nameCurrency: "HUF " ,
-    spaceName: '&emsp;',
+    },
+    HUF:{
     saleCurrency: 15.52 ,
-    space: '&emsp;',
     purchaseCurrency: 12.52,
-};
-for (const props in HUF) {
-    document.getElementById("logo4").innerHTML += (HUF[props]);
-}
-
-const EUR = {
-    nameCurrency: "EUR",
-    spaceName: '&emsp;',
+    },
+    EUR:{
     saleCurrency:12.52,
-    space: '&emsp;',
     purchaseCurrency: 10.52 ,
+    },
+    // show: function(tablo){
+        // `Currency exchange 
+        // <div> ${saleCurrency}
+        // <div> ${purchaseCurrency}
+        // ` 
+    // },
 }
+]
+// function show(j){
+    // `Currency exchange 
+    // <div> ${saleCurrency}
+    // <div> ${purchaseCurrency}
+    // ` 
 
-for (const props in EUR) {
-    document.getElementById("logo5").innerHTML += (EUR[props]);
-}
-// for (const props in EUR.nameCurrency) {
-    //  document.getElementById("logo5").innerHTML += (EUR.nameCurrency[props]);
-    
+let entries = Object.entries(currency);
+console.log(entries)
+
+entries.map((saleCurrency, purchaseCurrency)) = console.log(currency);
+document.write(entries.currency);
+
+// for(let values of currency){
+    // console.log(`${currency}`)
 // }
+// document.write(values);
+
+
+
+
+
+
