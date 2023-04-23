@@ -24,30 +24,14 @@ const currency = [
     saleCurrency:12.52,
     purchaseCurrency: 10.52 ,
     },
-    // show: function(tablo){
-        // `Currency exchange 
-        // <div> ${saleCurrency}
-        // <div> ${purchaseCurrency}
-        // ` 
-    // },
+    show: function(tablo){
+        `Currency exchange 
+         ${this[tablo].AUD}
+         ` 
+     }
 }
 ]
-// function show(j){
-    // `Currency exchange 
-    // <div> ${saleCurrency}
-    // <div> ${purchaseCurrency}
-    // ` 
-
-let entries = Object.entries(currency);
-console.log(entries)
-
-entries.map((saleCurrency, purchaseCurrency)) = console.log(currency);
-document.write(entries.currency);
-
-// for(let values of currency){
-    // console.log(`${currency}`)
-// }
-// document.write(values);
+document.write(currency.show)
 
 
 
