@@ -23,15 +23,18 @@ const currency = [
     EUR:{
     saleCurrency:12.52,
     purchaseCurrency: 10.52 ,
-    },
-    show: function(tablo){
-        `Currency exchange 
-         ${this[tablo].AUD}
-         ` 
-     }
+    }, 
 }
-]
-document.write(currency.show)
+    ]
+    const NewCurrency= [currency]
+    const tablo = currency.map((tablo) => NewCurrency);
+    function show(){
+        return `Currency exchange <br> ${this.NewCurrency} `
+            }
+// show()
+console.log(NewCurrency)
+document.write(NewCurrency)
+
 
 
 

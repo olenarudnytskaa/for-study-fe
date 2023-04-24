@@ -8,60 +8,64 @@
 // У методі main створіть масив типу Animal, в який запишіть тварин всіх типів, що є у вас. 
 // У циклі надсилайте їх на прийом до ветеринара.
 
-const animal = new Object();
-    animal.dog = "dog";
-    animal.Cat = "cat";
-    animal.Horse= "horse";
+function Animal(Cat, Dog, Horse){
+   Animal.Cat = "Cat";
+    Animal.Dog = "Dog";
+    Animal.Horse = "Horse"
+};
 
-    function MakeNoise(){
-        console.log(`Така тварина спить ${animal.dog}`);
+let NewAnimal = new Animal;
+console.log(NewAnimal);
+
+  Animal.prototype.MakeNoise = function(){
+        console.log(`Така тварина спить  ${Animal.Dog}`)}
         MakeNoise = function(){
-            console.log(`${animal.Cat} ${animal.dog} ${animal.Horse}`)
+            console.log(this.Cat + this.Dog + this.Horse)
         }
-    };
-MakeNoise();
-MakeNoise();
-    function Eat(){
-    console.log(`Така тварина їсть ${animal.dog}`);
+    Animal.prototype.MakeNoise();
+
+    Animal.prototype.Eat = function(){
+    console.log(`Така тварина їсть  ${Animal.Dog}`);
     Eat = function(){
-        console.log(`${animal.Cat} ${animal.dog} ${animal.Horse}`)
+        console.log(`${Animal.Cat} ${Animal.dog} ${Animal.Horse}`)
  };
 };
-Eat();
-Eat();
+Animal.prototype.Eat();
 
-function SkillDog(){
-    console.log(`${animal.dog} гавкає`);
-} ;
-SkillDog();
+Animal.prototype.Sleep = function(){
+    console.log(`Така тварина не спить  ${Animal.Dog}`)};
+    Animal.prototype.Sleep();
 
-let animalDog = "гавкає";
- console.log(`${animal.dog} ${animalDog} `)
+
+
+let AnimalDog = "гавкає";
+ console.log(`${Animal.Dog} ${AnimalDog} `)
  let animalCat = "мявкає ";
- console.log(`${animal.Cat} ${animalCat} `)
+ console.log(`${Animal.Cat} ${animalCat} `)
  let animalHorse = "ржє";
- console.log(`${animal.Horse} ${animalHorse} `)
+ console.log(`${Animal.Horse} ${animalHorse} `)
 function sleep(){
 }
 
-const Doc = new Object();
-Doc.Food = "food";
-Doc.Location = "location"; 
+const FoodLocation = new Object();
+FoodLocation.Food = "food";
+FoodLocation.Location = "location"; 
 
 
 void function (i){
     console.log(`${Doc}`, i);
 }
 
-const newAnimal = [animal];
-const newDoc = [Doc];
-const treatAnimal = newAnimal.map((animal, Doc) => newAnimal);
-for(let value in animal){
-    console.log(value + animal[value]) ;
-    for(let value in Doc){
-        console.log(value + Doc[value]) ;
+const newAnimal = [Animal];
+const newDoc = [FoodLocation];
+const treatAnimal = newAnimal.map((animal,FoodLocation) => newAnimal);
+for(let value in Animal){
+    console.log(value + Animal[value]) ;
+    for(let value in FoodLocation){
+        console.log(value + FoodLocation[value]) ;
     }
 }
+console.log(newAnimal);
 
 const allAnimal = [newAnimal];
 console.log(allAnimal);
@@ -70,10 +74,9 @@ const Doctor = "doctor";
 
 function main(){
     newAnimal.forEach((allAnimal,Doctor) => Doctor);
-    for(let value in animal){
-        console.log(value + animal[value] + Doctor) ;
+    for(let value in Animal){
+        console.log(value + Animal[value] + Doctor) ;
     }
 }
-
 main();
 
