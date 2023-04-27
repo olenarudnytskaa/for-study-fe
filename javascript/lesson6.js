@@ -13,6 +13,16 @@ function Animal(Cat, Dog, Horse){
     Animal.Dog = "Dog";
     Animal.Horse = "Horse"
 };
+//  или вот так нужно сдедать?
+// class Cat extends Animal {
+//   constructor(name, age, breed) {
+    // super(name, age);
+    // this.breed = breed;
+//   }
+  
+//   meow() {
+    // console.log(`${this.name} says "Meow!"`);
+//   }
 
 let NewAnimal = new Animal;
 console.log(NewAnimal);

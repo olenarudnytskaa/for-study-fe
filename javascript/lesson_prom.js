@@ -1,4 +1,4 @@
-const currency = [
+const Currency = [
 {
     AUD: {
     saleCurrency: 12.83,
@@ -24,16 +24,16 @@ const currency = [
     saleCurrency:12.52,
     purchaseCurrency: 10.52 ,
     }, 
-}
-    ]
-    const NewCurrency= [currency]
-    const tablo = currency.map((tablo) => NewCurrency);
-    function show(){
-        return `Currency exchange <br> ${this.NewCurrency} `
+    toString(){
+        return `Currency exchange <br> ${this.EUR} `
             }
-// show()
-console.log(NewCurrency)
-document.write(NewCurrency)
+}
+ 
+    ]
+    const currency = new Currency('Currency exchange')
+    console.log( `${currency}`)
+   
+
 
 
 
