@@ -8,85 +8,88 @@
 // У методі main створіть масив типу Animal, в який запишіть тварин всіх типів, що є у вас. 
 // У циклі надсилайте їх на прийом до ветеринара.
 
-function Animal(Cat, Dog, Horse){
-   Animal.Cat = "Cat";
-    Animal.Dog = "Dog";
-    Animal.Horse = "Horse"
+class Animal{
+    constructor(Name, Food, Location, Sound,Doctor){
+    this.Name = Name;
+    this.Food = Food;
+    this.Location = Location;
+    this.Sound = Sound;
+}
+treatAnimal() {
+    console.log(`The ` + this.Name  + ` is located in  ` + this.Location + ` eat` + this.Food + ` make ` + this.Sound);
+  }
+// visitDoc(){
+    // console.log(`The ` + this.Name  + ` visit doctor  ` + `${Doctor}` );
+// }
 };
-//  или вот так нужно сдедать?
-// class Cat extends Animal {
-//   constructor(name, age, breed) {
-    // super(name, age);
-    // this.breed = breed;
-//   }
-  
-//   meow() {
-    // console.log(`${this.name} says "Meow!"`);
-//   }
 
-let NewAnimal = new Animal;
-console.log(NewAnimal);
 
-  Animal.prototype.MakeNoise = function(){
-        console.log(`Така тварина спить  ${Animal.Dog}`)}
-        MakeNoise = function(){
-            console.log(this.Cat + this.Dog + this.Horse)
-        }
-    Animal.prototype.MakeNoise();
-
-    Animal.prototype.Eat = function(){
-    console.log(`Така тварина їсть  ${Animal.Dog}`);
-    Eat = function(){
-        console.log(`${Animal.Cat} ${Animal.dog} ${Animal.Horse}`)
- };
+class Dog extends Animal{
+    constructor(Name, Food, Location, Sound,  Bark ){
+    super( Name, Food, Location, Sound, );
+    this.Bark = Bark;
+}
 };
-Animal.prototype.Eat();
+
+class Cat extends Animal{
+    constructor(Name,  Food, Location , Sound,  Meow ){
+    super(Name, Food, Location , Sound);
+    this.Meow = Meow;
+}
+};
+
+class Horse extends Animal{
+    constructor(Name,  Food, Location , Sound,  Igogo){
+    super(Name, Food, Location, Sound);
+    this.Igogo = Igogo;
+}
+};
+
+class Doctor extends Animal{
+    constructor(Name, Food, Location, Sound ){
+    super( Name, Food, Location, Sound );
+    }
+};
+
+
+const dog = new Dog('Sharik', ' meat', ' home', 'bark' );
+const cat = new Cat('Myrchik', ' fish', ' home', 'meow' );
+const horse = new Horse ( 'Star', ' hay' , ' farm house' , 'igogo')
+const doctor = new Doctor ('Jack');
+dog.treatAnimal();
+cat.treatAnimal();
+horse.treatAnimal();
+
+const dogg = new Dog( 'Sharik',' Jack')
+dogg.visitDoc();
+
+Animal.prototype.MakeNoise = function(){
+        console.log(`Така тварина спить ` + dog.Name)};     
+dog.MakeNoise();
+
+Animal.prototype.Eat = function(){
+    console.log(`Така тварина їсть `  + cat.Name)};
+cat.Eat();
+
 
 Animal.prototype.Sleep = function(){
-    console.log(`Така тварина не спить  ${Animal.Dog}`)};
-    Animal.prototype.Sleep();
+    console.log(`Така тварина не спить ` + horse.Name)};
+horse.Sleep();
+
+
+// Animal.prototype.Main = function(){
+    // console.log(`The ` + this.Name + `visit doctor` + this.Doctor + ` at ` + this.Time )
+// }
+// newDog.Main();
 
 
 
-let AnimalDog = "гавкає";
- console.log(`${Animal.Dog} ${AnimalDog} `)
- let animalCat = "мявкає ";
- console.log(`${Animal.Cat} ${animalCat} `)
- let animalHorse = "ржє";
- console.log(`${Animal.Horse} ${animalHorse} `)
-function sleep(){
-}
 
-const FoodLocation = new Object();
-FoodLocation.Food = "food";
-FoodLocation.Location = "location"; 
+const main = [Cat, Dog, Horse];
+const maindoc =  main.map((main) => `${Animal} - ${doc}`);
+console.log(maindoc)
 
 
-void function (i){
-    console.log(`${Doc}`, i);
-}
 
-const newAnimal = [Animal];
-const newDoc = [FoodLocation];
-const treatAnimal = newAnimal.map((animal,FoodLocation) => newAnimal);
-for(let value in Animal){
-    console.log(value + Animal[value]) ;
-    for(let value in FoodLocation){
-        console.log(value + FoodLocation[value]) ;
-    }
-}
-console.log(newAnimal);
 
-const allAnimal = [newAnimal];
-console.log(allAnimal);
-
-const Doctor = "doctor";
-
-function main(){
-    newAnimal.forEach((allAnimal,Doctor) => Doctor);
-    for(let value in Animal){
-        console.log(value + Animal[value] + Doctor) ;
-    }
-}
-main();
 
