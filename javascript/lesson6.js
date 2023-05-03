@@ -18,9 +18,7 @@ class Animal{
 treatAnimal() {
     console.log(`The ` + this.Name  + ` is located in  ` + this.Location + ` eat` + this.Food + ` make ` + this.Sound);
   }
-// visitDoc(){
-    // console.log(`The ` + this.Name  + ` visit doctor  ` + `${Doctor}` );
-// }
+
 };
 
 
@@ -49,45 +47,52 @@ class Doctor extends Animal{
     constructor(Name, Food, Location, Sound ){
     super( Name, Food, Location, Sound );
     }
+    void(){
+
+    };
+   treat(){
+        console.log(`Treating a ` + dog.Name + `,`+ cat.Name + `,`+ horse.Name );
+   }
 };
 
 
 const dog = new Dog('Sharik', ' meat', ' home', 'bark' );
 const cat = new Cat('Myrchik', ' fish', ' home', 'meow' );
-const horse = new Horse ( 'Star', ' hay' , ' farm house' , 'igogo')
-const doctor = new Doctor ('Jack');
+const horse = new Horse ( 'Star', ' hay' , ' farm house' , 'igogo');
 dog.treatAnimal();
 cat.treatAnimal();
 horse.treatAnimal();
 
-const dogg = new Dog( 'Sharik',' Jack')
-dogg.visitDoc();
+
 
 Animal.prototype.MakeNoise = function(){
-        console.log(`Така тварина спить ` + dog.Name)};     
+       console.log( `Така тварина спить ` + this.Name)};     
 dog.MakeNoise();
+cat.MakeNoise();
+horse.MakeNoise();
 
 Animal.prototype.Eat = function(){
-    console.log(`Така тварина їсть `  + cat.Name)};
+    console.log(`Така тварина їсть `  + this.Name + this.Food)};
 cat.Eat();
+horse.Eat();
+dog.Eat();
 
 
 Animal.prototype.Sleep = function(){
-    console.log(`Така тварина не спить ` + horse.Name)};
+    console.log(`Така тварина не спить ` + this.Name)};
 horse.Sleep();
-
-
-// Animal.prototype.Main = function(){
-    // console.log(`The ` + this.Name + `visit doctor` + this.Doctor + ` at ` + this.Time )
-// }
-// newDog.Main();
-
 
 
 
 const main = [Cat, Dog, Horse];
-const maindoc =  main.map((main) => `${Animal} - ${doc}`);
-console.log(maindoc)
+const doc = new Doctor;
+main.forEach(animal => {
+    doc.treat(animal);
+    console.log(`Treating ` + dog.Name);
+    console.log(`Treating ` + cat.Name );
+    console.log(`Treating ` + horse.Name );
+});
+ 
 
 
 
