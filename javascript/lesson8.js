@@ -67,7 +67,6 @@ function changeInput(){
 	input2.value= buffer;
     } 
     
-
 function selectFirstChild(){
     const ul = document.querySelector('#list');
     ul.firstElementChild.style.color = "red";
@@ -79,14 +78,13 @@ function selectLastChild(){
     }
 
 function selectNextNode(){
-    const ul = document.querySelector('li').nextElementSibling;
-    ul.nextElementSibling.style.color = "red";
-    }
+    const ul = document.querySelector('li');
+   ul.nextElementSibling.style.color = "red";
+}
 
 function selectPrevNode(){
-    const parent = document.getElementById('list-item-3');
-    const previous = parent.previousElementSibling;
-    previous.style.color = "red";
+    const ul = document.querySelector('#list5');
+    ul.previousElementSibling.style.color = "red";
     }
 
 function createNewChild(){
@@ -105,10 +103,6 @@ function createNewChildAtStart(){
     li.innerHTML = "List Item 0"; 
     list.prepend(li);
     }
-
-
-
-
 
 
 

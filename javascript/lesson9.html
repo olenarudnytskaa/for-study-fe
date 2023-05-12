@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"></div>
+     <!--stopwatch-->
+<div class="container-stopwatch black">
+<div id="stopwatch-display">
+    <span>00</span>:<span>00</span>:<span>00</span>
+</div>
+<div class="stopwatch-control">
+    <button id="start" onclick="result()">Start</button>
+    <button id="stop" onclick="">Stop</button>
+    <button id="reset" onclick="">Reset</button>
+</div>
+<br>
+</div>
+<div class="pictures">
+<img src="https://new-science.ru/wp-content/uploads/2020/03/4848-4.jpg" alt="">
+<img src="https://universetoday.ru/wp-content/uploads/2018/10/Mercury.jpg" alt="">
+<img src="https://naukatv.ru/upload/files/shutterstock_418733752.jpg" alt="">
+<img src="https://cdn.iz.ru/sites/default/files/styles/900x506/public/news-2018-12/20180913_zaa_p138_057.jpg" alt="">
+<img src="https://nnst1.gismeteo.ru/images/2020/07/shutterstock_1450308851-640x360.jpg" alt="">
+
+</div>
+</div> 
+     <style>
+        .pictures img{
+            display: none;
+        }
+        .pictures img:first-child {
+  display: block;
+}
+        .black {
+            background: black;
+        }
+
+        .silver {
+            background: rgba(88, 88, 88, .5);
+        }
+
+        .red {
+            background: rgba(231, 40, 40, 0.5);
+        }
+
+        .green {
+            background: rgba(39, 211, 76, 0.5);
+        }
+
+        .container-stopwatch {
+
+            width: fit-content;
+            padding: 1rem;
+            text-align: center;
+            border-radius: .5rem;
+            box-shadow: 0 0 10px black;
+        }
+
+        #stopwatch-display {
+            background: rgba(22, 97, 12, 0.5);
+            padding: 1.5rem;
+            font-weight: bold;
+            box-sizing: border-box;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .stopwatch-display span {
+            font-size: 2rem;
+        }
+
+        .stopwatch-control button {
+            text-transform: uppercase;
+            color: white;
+            background: rgba(0, 0, 0, 0.829);
+            border: none;
+            cursor: grab;
+        }
+
+        .stopwatch-control button:nth-child(2) {
+            margin: 0 .5rem;
+        }
+    </style>
+
+
+
+    <style>
+     
+        img{
+            width: 600px;
+            height: 450px;
+            
+        }
+        #div{
+            width: 100px;
+            height: 50px;
+            border: 2px solid blue;
+        }
+        input{
+            width: 160px;
+            height: 40px;
+            margin-top: 40px;
+            font-size: 20px;
+            color: black;
+        }
+        
+        button{
+            width: 40px;
+            height: 40px;
+            margin: 20px;
+        }
+    </style>
+    <script src="lesson9.js"></script>
+</body>
+</html>
