@@ -79,7 +79,7 @@ function selectLastChild(){
 
 function selectNextNode(){
     const ul = document.querySelector('li');
-   ul.nextElementSibling.style.color = "red";
+    ul.nextElementSibling.style.color = "red";
 }
 
 function selectPrevNode(){

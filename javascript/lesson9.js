@@ -36,12 +36,38 @@
 
 const div = document.querySelector('#div');
 div.style.margin = '150px'; 
+console.log(div);
 
-// const start = document.querySelector('#start') ;
-// const watch = document.getElementsByClassName('stopwatch-display');
-let result = () => {
-const watch = document.getElementsByClassName('#stopwatch-display');
-watch.innerHTML = style.background='green';
+
+const buttonStart = document.querySelector('#start');
+buttonStart.onclick = ()=>{
+    const hours = document.querySelector('#hours');
+    hours.classList.add("green");
+    const minutes = document.querySelector('#minutes');
+    minutes.classList.add("green");
+    const seconds = document.querySelector('#seconds');
+    seconds.classList.add("green");
+};
+
+
+const buttonStop = document.querySelector('#stop');
+buttonStop.onclick = ()=>{
+    const hours = document.querySelector('#hours');
+    hours.classList.add("red");
+    const minutes = document.querySelector('#minutes');
+    minutes.classList.add("red");
+    const seconds = document.querySelector('#seconds');
+    seconds.classList.add("red");
+}
+
+const buttonReset = document.querySelector('#reset');
+buttonReset.onclick = ()=>{
+    const hours = document.querySelector('#hours');
+    hours.classList.add("silver");
+    const minutes = document.querySelector('#minutes');
+    minutes.classList.add("silver");
+    const seconds = document.querySelector('#seconds');
+    seconds.classList.add("silver");
 }
 
 
