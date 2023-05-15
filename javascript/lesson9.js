@@ -39,26 +39,26 @@ div.style.margin = '150px';
 console.log(div);
 
 
-const buttonStart = document.querySelector('#start');
-buttonStart.onclick = ()=>{
-    const hours = document.querySelector('#hours');
-    hours.classList.add("green");
-    const minutes = document.querySelector('#minutes');
-    minutes.classList.add("green");
-    const seconds = document.querySelector('#seconds');
-    seconds.classList.add("green");
-};
+// const buttonStart = document.querySelector('#start');
+// buttonStart.onclick = ()=>{
+    // const hours = document.querySelector('#hours');
+    // hours.classList.add("green");
+    // const minutes = document.querySelector('#minutes');
+    // minutes.classList.add("green");
+    // const seconds = document.querySelector('#seconds');
+    // seconds.classList.add("green");
+// };
 
 
-const buttonStop = document.querySelector('#stop');
-buttonStop.onclick = ()=>{
-    const hours = document.querySelector('#hours');
-    hours.classList.add("red");
-    const minutes = document.querySelector('#minutes');
-    minutes.classList.add("red");
-    const seconds = document.querySelector('#seconds');
-    seconds.classList.add("red");
-}
+// const buttonStop = document.querySelector('#stop');
+// buttonStop.onclick = ()=>{
+    // const hours = document.querySelector('#hours');
+    // hours.classList.add("red");
+    // const minutes = document.querySelector('#minutes');
+    // minutes.classList.add("red");
+    // const seconds = document.querySelector('#seconds');
+    // seconds.classList.add("red");
+// }
 
 const buttonReset = document.querySelector('#reset');
 buttonReset.onclick = ()=>{
@@ -69,6 +69,74 @@ buttonReset.onclick = ()=>{
     const seconds = document.querySelector('#seconds');
     seconds.classList.add("silver");
 }
+
+
+let counter = 0, intervalHandler;
+
+const get = id => document.getElementById('#start');
+
+
+function $ (selector) {
+    return document.querySelector(selector);
+}
+const coount = () => {
+    $("#seconds").innerHTML = + counter;
+    counter++; 
+    $("#seconds").classList.add("green");
+    $("#minutes").classList.add("green");
+    $("#hours").classList.add("green");
+}
+
+$("#start").onclick = () => {
+    intervalHandler = setInterval(coount, 1000);
+}
+
+
+$("#stop").onclick = () => {
+    clearInterval(intervalHandler);
+    $("#seconds").classList.remove("green");
+    $("#seconds").classList.add("red");
+    $("#minutes").classList.remove("green");
+    $("#minutes").classList.add("red");
+    $("#hours").classList.remove("green");
+    $("#hours").classList.add("red");
+}
+
+
+
+$("#reset").onclick = () => {
+  clearInterval(intervalHandler); 
+  $("#seconds").innerHTML = counter=0;
+  $("#seconds").classList.remove("green","red");
+  $("#seconds").classList.add("silver");
+  $("#hours").classList.remove("green","red");
+  $("#hours").classList.add("silver");
+  $("#minutes").classList.remove("green","red");
+  $("#minutes").classList.add("silver");
+}
+
+
+
+let counterminutes = 0;
+const Count= () => {
+  counterminutes++;
+  document.querySelector('#minutes').textContent=counterminutes;
+  if (counterminutes === 60) {
+    clearInterval(intervalId);
+}
+}
+setInterval(Count,60000)
+
+let counterhours = 0;
+const counters = () => {
+  counters++;
+  document.querySelector('#minutes').textContent=counterhours;
+  if (counterhours === 24) {
+    clearInterval(intervalId);
+}
+}
+setInterval(counters,3600000)
+
 
 
 const numberInput = document.createElement('input');
@@ -86,7 +154,7 @@ document.body.append(saveButton);
 
 
 saveButton.onclick = function (){
-    const pattern = /\d+/;
+    const pattern = /^\d+$/;
     let number = document.querySelector('#number').value;
     const valid = pattern.test(number);
     if (valid) output = numberInput.style.background = "green";
