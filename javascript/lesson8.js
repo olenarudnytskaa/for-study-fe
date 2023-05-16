@@ -67,6 +67,14 @@ function changeInput(){
 	input2.value= buffer;
     } 
     
+    
+function check(){
+    let button = document.querySelectorAll('#list');
+console.log(button)
+}
+check();
+
+
 function selectFirstChild(){
     const ul = document.querySelector('#list');
     ul.firstElementChild.style.color = "red";
@@ -77,14 +85,44 @@ function selectLastChild(){
     ul.lastElementChild.style.color = "red";
     }
 
-function selectNextNode(){
-    const ul = document.querySelector('li');
-    ul.nextElementSibling.style.color = "red";
-}
+    let counter = 0;
+    let selectedElement = null;
+    
+function selectNextNode() {
+    const lis = document.querySelectorAll('li');
+    
+    if (selectedElement) {
+        selectedElement.style.color = "black";
+    }
+    selectedElement = lis[counter % lis.length];
+    selectedElement.style.color = "red";
+    counter++;
+    }
+ 
+    
+
+
+function Check(){
+    const liElements = document.querySelectorAll('li');
+    liElements.forEach(function(li) {
+      if (li.nextElementSibling) {
+        console.log("Next", li);
+      } else {
+        console.log("No next", li);
+      }
+    });
+  }
+  Check();
 
 function selectPrevNode(){
-    const ul = document.querySelector('#list5');
-    ul.previousElementSibling.style.color = "red";
+    const lis = document.querySelectorAll('li');
+    
+    if (selectedElement) {
+        selectedElement.style.color = "black";
+    }
+    counter = (counter - 1 + lis.length) % lis.length;
+    selectedElement = lis[counter];
+    selectedElement.style.color = "red"
     }
 
 function createNewChild(){
@@ -104,5 +142,6 @@ function createNewChildAtStart(){
     list.prepend(li);
     }
 
+  
 
-
+   

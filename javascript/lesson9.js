@@ -106,7 +106,7 @@ $("#stop").onclick = () => {
 
 $("#reset").onclick = () => {
   clearInterval(intervalHandler); 
-  $("#seconds").innerHTML = counter=0;
+  $("#seconds").innerHTML = counter=00;
   $("#seconds").classList.remove("green","red");
   $("#seconds").classList.add("silver");
   $("#hours").classList.remove("green","red");
