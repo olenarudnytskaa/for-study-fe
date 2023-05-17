@@ -154,7 +154,7 @@ document.body.append(saveButton);
 
 
 saveButton.onclick = function (){
-    const pattern = /^\d+$/;
+    const pattern = /^\d{10}$/;
     let number = document.querySelector('#number').value;
     const valid = pattern.test(number);
     if (valid) output = numberInput.style.background = "green";

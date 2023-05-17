@@ -20,3 +20,18 @@
 //  `MRC` покажет число из памяти на экране. 
 // Повторное нажатие `MRC`
 // должно очищать память.
+window.addEventListener("DOMContentLoaded", () => {
+const buttonBlack = document.getElementsByClassName('button black');
+const keys = document.getElementsByClassName('keys')
+const display = document.getElementsByClassName('display');
+const result =  document.querySelector('#eq');
+
+const myFunc = function(event) {
+    if(event.target.tagName === "button black") { 
+      event.target.style.color = "black:active"
+    }
+};
+})
+
+
+
