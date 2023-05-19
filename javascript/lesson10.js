@@ -20,18 +20,46 @@
 //  `MRC` покажет число из памяти на экране. 
 // Повторное нажатие `MRC`
 // должно очищать память.
-window.addEventListener("DOMContentLoaded", () => {
-const buttonBlack = document.getElementsByClassName('button black');
-const keys = document.getElementsByClassName('keys')
-const display = document.getElementsByClassName('display');
-const result =  document.querySelector('#eq');
+window.addEventListener("DOMContentLoaded", (e) => {
 
-const myFunc = function(event) {
-    if(event.target.tagName === "button black") { 
-      event.target.style.color = "black:active"
-    }
-};
-})
+    let a = '';
+    let b = '';
+    let sign = '';
+    let equal = '';
 
+    const buttonBlack = document.getElementsByClassName("button black");
+    // buttonBlack.value= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+    const buttonPink = document.getElementsByClassName("button pink");
+    // buttonPink.value = '/, *, -,+';
+    const buttonGray = document.getElementsByClassName("button gray");
+    const display = document.querySelector("#display-input");
+    const buttonEquel = document.querySelector("#eq");
 
+    buttonEquel.addEventListener('click', (e)=>{
+    if (e.target.contains='.button.orange') 
+        e.target.classList.add(".orange:active"); 
+    })
+       
+        
+
+    
+for (let i = 0; i < buttonBlack.length; i++) {
+    buttonBlack[i].addEventListener("click", function(e) {     
+        if (e.target.contains='.button.black') {
+            e.target.classList.add(".black:active");
+        }else if (e.target.value = display.innerHTML);})
+}
+for (let i = 0; i < buttonPink.length; i++) {
+    buttonPink[i].addEventListener("click", function(e) {     
+        if (e.target.contains='.button.pink') {
+            e.target.classList.add(".pink:active");
+        }})
+}
+for (let i = 0; i < buttonGray.length; i++) {
+    buttonGray[i].addEventListener("click", function(e) {     
+        if (e.target.contains='.button.gray') {
+            e.target.classList.add(".gray:active");
+        }})
+}
+});
 
