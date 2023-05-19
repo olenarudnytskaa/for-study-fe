@@ -38,7 +38,7 @@
     });
     input.onkeypress= function(e){
         let inputVal= document.querySelector('#price').value;
-        const pattern = /\d+/;
+        const pattern = /\d+$/;
         const paragraf = document.querySelector('p')
         if (!pattern.test(inputVal)) {
             this.classList.remove("price");
