@@ -56,7 +56,7 @@
     input.onmouseout = function () {
         this.classList.remove("right")
         let inputVal= document.querySelector('#price').value;
-        const pattern = /\d+/;
+        const pattern = /\d+$/;
         if (!pattern.test(inputVal)) {
             this.classList.remove("price");
             this.classList.add(".error");

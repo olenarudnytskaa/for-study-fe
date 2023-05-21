@@ -252,11 +252,15 @@ footer input {
     border: none;
     font-size: 0.9em;
 }
-
+.succesfully{
+    border: 4px green solid;
+}
 .success {
     border: 2px green solid;
 }
-
+.mistake{
+    border: 4px red solid;
+}
 .error {
     border: 2px red solid;
 }
