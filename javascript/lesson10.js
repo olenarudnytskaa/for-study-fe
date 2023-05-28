@@ -22,44 +22,69 @@
 // должно очищать память.
 window.addEventListener("DOMContentLoaded", (e) => {
 
-    let a = '';
-    let b = '';
-    let sign = '';
-    let equal = '';
-
-    const buttonBlack = document.getElementsByClassName("button black");
-    // buttonBlack.value= [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    const buttonPink = document.getElementsByClassName("button pink");
-    // buttonPink.value = '/, *, -,+';
-    const buttonGray = document.getElementsByClassName("button gray");
-    const display = document.querySelector("#display-input");
     const buttonEquel = document.querySelector("#eq");
-
     buttonEquel.addEventListener('click', (e)=>{
-    if (e.target.contains='.button.orange') 
-        e.target.classList.add(".orange:active"); 
+    e.target.classList.add("orange:active"); 
+    const displayInput = this.value;
+    document.querySelector('#display input').value = displayInput;
     })
-       
-        
 
+    const buttonclean = document.querySelector("#C");
+    buttonclean.addEventListener('click', (e)=>{
+    e.target.classList.add("orange:active"); 
+    buttonclean.value = 0;
+    const displayInput = this.value;
+    document.querySelector('#display input').value = displayInput;
+    },
+    function clearAll(){
+    a="";
+    b="";
+    sign ="";
+    equal=false;
+    })
+
+    const buttonBlackList = document.getElementsByClassName("button black");
+Array.from(buttonBlackList).forEach(function(button) {
+  button.addEventListener('click', function(e) {
+    e.target.classList.add('black:active');
+    const displayInput = this.value;
+    document.querySelector('#display input').value = displayInput;
     
-for (let i = 0; i < buttonBlack.length; i++) {
-    buttonBlack[i].addEventListener("click", function(e) {     
-        if (e.target.contains='.button.black') {
-            e.target.classList.add(".black:active");
-        }else if (e.target.value = display.innerHTML);})
-}
-for (let i = 0; i < buttonPink.length; i++) {
-    buttonPink[i].addEventListener("click", function(e) {     
-        if (e.target.contains='.button.pink') {
-            e.target.classList.add(".pink:active");
-        }})
-}
-for (let i = 0; i < buttonGray.length; i++) {
-    buttonGray[i].addEventListener("click", function(e) {     
-        if (e.target.contains='.button.gray') {
-            e.target.classList.add(".gray:active");
-        }})
-}
+  });
 });
+
+const buttonPink = document.getElementsByClassName("button pink");
+Array.from(buttonPink).forEach(function(button) {
+    button.addEventListener('click', function(e) {
+        e.target.classList.add(".pink:active");
+        // const displayInput = this.value;
+    // document.querySelector('#display input').value = displayInput;
+
+})});
+const buttonGray = document.getElementsByClassName("button gray");
+Array.from(buttonGray).forEach(function(button) {
+    button.addEventListener('click', function(e) {
+            e.target.classList.add(".gray:active");
+            const displayInput = this.value;
+    document.querySelector('#display input').value = displayInput;
+})});
+})
+
+let  a = '';
+let b = '';
+let sign = '';
+let equal = '';
+
+const out = document.querySelector('#display input');
+out.textContent= '';
+out.textContent = a;
+out.addEventListener('click', function(e) {
+
+})
+    
+
+
+
+
+
 
