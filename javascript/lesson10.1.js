@@ -15,6 +15,7 @@ function clearAll(){
     b="";
     sign ="";
     equal=false;
+    memory ="";
     out.value = 0;
     };
     document.querySelector('#C').onclick = clearAll;
@@ -54,6 +55,7 @@ if (digit.includes(key)) {
   }})
 })
 
+
 function calculate(a, b, sign,) {
     switch (sign) {
       case '+':
@@ -66,39 +68,68 @@ function calculate(a, b, sign,) {
         return a / b;
       default:
         return '';
-        // case 'm+':
-            // return saveButton+out.value;
-        // case 'm-':
-            // return saveButton+out.value;
-    }
-  }
 
-  const buttonsMemory = document.getElementsByClassName('keys');
-  Array.from(buttons).forEach(function(button) {
-  button.addEventListener('click', (e)=>{
-const key = e.target.value;
-key.value = 'mrs';
-key.textContent = 'mrs';
-key.value = 'm+';
-key.value = 'm-';
-const saveButton = out.value;
-out.value + saveButton
-if (save.includes(key)) {
-saveButton;
- }
+    }
+  };
+
  
-else if (key === 'm+') {
-     saveButton + out.value
-    //  out.value = result;
-    finish = true
-    // out.value + save;
-    // b += save;
-    // out.value + save;
-    // finish += save;
-    // out.value + save;
- }
-else if (key === 'm-') {
-    saveButton - out.value;
-    finish = true
-  }})})
- 
+// const mrcButton = document.querySelector('#mrc');
+// mrcButton.addEventListener('click', (e) => {
+
+//   const buttonMemory = parseFloat(out.value) ; 
+//   // out.insertAdjacentText('beforebegin', 'mrc');
+//   out.value = mrcButton.textContent + out.value;
+//   out.value = "mrc" + out.value;
+//   if (save.includes(buttonMemory)) {
+//     out.value = buttonMemory; 
+//    } ;
+   
+
+
+// const mplusButton = document.querySelector('#mplus');
+// mplusButton.addEventListener('click', (e) => {
+//   const currentValue = parseFloat(out.value);
+//   if (!isNaN(currentValue)) {
+//     const result = buttonMemory + currentValue; 
+//     out.value = result.toString(); 
+//   }}) ;
+
+//   const minusButton = document.querySelector('#minus');
+//   minusButton.addEventListener('click', (e) => {
+//   const current = parseFloat(out.value);
+
+//     const result =  current- buttonMemory;
+//     out.value = result.toString(); 
+    
+// })
+// });
+let memoryValue = null; 
+
+const mrcButton = document.querySelector('#mrc');
+mrcButton.addEventListener('click', (e) => {
+  if (memoryValue === null) {
+    memoryValue = parseFloat(out.value); 
+    out.value = "mrc" + out.value; 
+  } else {
+    memoryValue = null; 
+    out.value = ""; 
+  }
+});
+
+const mplusButton = document.querySelector('#mplus');
+mplusButton.addEventListener('click', (e) => {
+  const currentValue = parseFloat(out.value);
+  if (!isNaN(currentValue) && memoryValue !== null) {
+    const result = memoryValue + currentValue;
+    out.value = result.toString();
+  }
+});
+
+const minusButton = document.querySelector('#minus');
+minusButton.addEventListener('click', (e) => {
+  const currentValue = parseFloat(out.value);
+  if (!isNaN(currentValue) && memoryValue !== null) {
+    const result = currentValue - memoryValue;
+    out.value = result.toString();
+  }
+});
