@@ -72,37 +72,8 @@ function calculate(a, b, sign,) {
     }
   };
 
- 
-// const mrcButton = document.querySelector('#mrc');
-// mrcButton.addEventListener('click', (e) => {
-
-//   const buttonMemory = parseFloat(out.value) ; 
-//   // out.insertAdjacentText('beforebegin', 'mrc');
-//   out.value = mrcButton.textContent + out.value;
-//   out.value = "mrc" + out.value;
-//   if (save.includes(buttonMemory)) {
-//     out.value = buttonMemory; 
-//    } ;
-   
 
 
-// const mplusButton = document.querySelector('#mplus');
-// mplusButton.addEventListener('click', (e) => {
-//   const currentValue = parseFloat(out.value);
-//   if (!isNaN(currentValue)) {
-//     const result = buttonMemory + currentValue; 
-//     out.value = result.toString(); 
-//   }}) ;
-
-//   const minusButton = document.querySelector('#minus');
-//   minusButton.addEventListener('click', (e) => {
-//   const current = parseFloat(out.value);
-
-//     const result =  current- buttonMemory;
-//     out.value = result.toString(); 
-    
-// })
-// });
 let memoryValue = null; 
 
 const mrcButton = document.querySelector('#mrc');

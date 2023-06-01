@@ -40,7 +40,7 @@ pizza.addEventListener("drop", function (evt) {
     pizza.style.border = "";
     const draggedImageSrc = evt.dataTransfer.getData("text/plain");
 
-  const newImage = document.createElement("img");
+  const newImage = document.createElement("div");
   newImage.src = "sous-klassicheskij_1557758736353.png";
   newImage.alt = "Dropped Image";
   newImage.style.position = "absolute";
