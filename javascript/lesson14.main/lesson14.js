@@ -13,6 +13,7 @@ function showProductCard (arr = []) {
 }
 
 function addToBasket (info) {
+  
     if(localStorage.product){
         const product = JSON.parse(localStorage.product);
         if(!Array.isArray(product)) {
@@ -22,11 +23,14 @@ function addToBasket (info) {
            product.push(info); 
         }
         localStorage.product = JSON.stringify(product);
+       
     }else if (info){
-        localStorage.product = JSON.stringify([info])
+        localStorage.product = JSON.stringify([info]) ;
+        
     }else{
         return
     }
+    
 
     const productArr = JSON.parse(localStorage.product);
    
@@ -34,15 +38,15 @@ function addToBasket (info) {
      return   createProductBasket(el.title, el.price)
     })
     document.querySelector(".basket").innerHTML = ""
-    document.querySelector(".basket").append(...newArr)
+    document.querySelector(".basket").append(...newArr) + getData()
 }
 
 function createProductBasket (name, price) {
     const li = document.createElement("li");
-    li.innerText = `Назва позиції : ${name}. Ціна : ${price} (${getData()})`
+    li.innerText = `Назва позиції : ${name}. Ціна : ${price} `
     return li
 }
-
+// (${getData()})
 addToBasket()
 
 function getData () {

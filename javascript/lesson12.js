@@ -1,4 +1,34 @@
-window.addEventListener("DOMContentLoaded", () => {
+// window.addEventListener("DOMContentLoaded", () => {
+
+   
+const plateS = document.querySelector('#small');
+plateS.addEventListener('click', function(e) {
+  const position = 'beforeend'; 
+  const htmlString = '<div>50</div>'; 
+
+  const parentElement = document.querySelector('#price'); 
+  parentElement.insertAdjacentHTML(position, htmlString);
+});
+
+const plateM = document.querySelector('#mid');
+plateM.addEventListener('click', function(e) {
+  const position = 'beforeend'; 
+  const htmlString = '<div>60</div>'; 
+
+  const parentElement = document.querySelector('#price'); 
+  parentElement.insertAdjacentHTML(position, htmlString);
+});
+
+const plateL = document.querySelector('#big');
+plateL.addEventListener('click', function(e) {
+  const position = 'beforeend'; 
+  const htmlString = '<div>80</div>';
+
+  const parentElement = document.querySelector('#price'); 
+  parentElement.insertAdjacentHTML(position, htmlString);
+});
+
+    
 
 const souse = document.querySelector("#sauceClassic");
 
@@ -16,6 +46,22 @@ souse.addEventListener("dragend", function (evt) {
    
     const name = document.querySelector('#ketch').textContent;
     document.querySelector('#sauce').innerHTML += "<br>" + name;
+    const b =  parseInt(name.replace(/\D/g, ''));
+    function calculateTotal() {
+        const priceElements = document.querySelectorAll('#price');
+        let total = b;
+       
+        priceElements.forEach(function (element) {
+            const value = parseInt(element.textContent);
+            if (!isNaN(value)) {
+              total += value;
+            }
+          });
+        return total;
+      }
+      
+      const total = calculateTotal();
+      document.querySelector('#price').innerHTML = total;
 });
 
 const pizza = document.querySelector("#cake");
@@ -33,23 +79,11 @@ pizza.addEventListener("dragover", function (evt) {
     return false;
 }, false);
 
+
+
+
 pizza.addEventListener("drop", function (evt) {
-    function Ketch() {
-        const preis = document.querySelector('#price');
-        const number = parseInt(preis.textContent);
-        preis.textContent = 0;
-        const ingridientsTom = document.querySelector('#priceketch') ;
-        const numTom = parseInt(ingridientsTom.textContent);
-        let totaltom;
-        if (isNaN(number) || number === 0 ) {
-            totaltom =   numTom;
-          } else {
-             totaltom = number + numTom;
-          }
-         return totaltom;
-        };
-        const totaltom = Ketch();
-        document.querySelector('#price').innerHTML= totaltom;
+
 
     if (evt.preventDefault) evt.preventDefault();
     if (evt.stopPropagation) evt.stopPropagation();
@@ -96,6 +130,22 @@ sauceBBQ.addEventListener("dragend", function (evt) {
    
     const nameBBQ = document.querySelector('#BBQname').textContent;
     document.querySelector('#sauce').innerHTML += "<br>" + nameBBQ;
+    const b =  parseInt(nameBBQ.replace(/\D/g, ''));
+    function calculateTotal() {
+        const priceElements = document.querySelectorAll('#price');
+        let total = b;
+       
+        priceElements.forEach(function (element) {
+            const value = parseInt(element.textContent);
+            if (!isNaN(value)) {
+              total += value;
+            }
+          });
+        return total;
+      }
+      
+      const total = calculateTotal();
+      document.querySelector('#price').innerHTML = total;
 });
 
 const pizzaTwo = document.querySelector("#cake");
@@ -114,21 +164,7 @@ pizzaTwo.addEventListener("dragover", function (evt) {
 }, false);
 
 pizzaTwo.addEventListener("drop", function (evt) {
-    function BBQ() {
-        const preis = document.querySelector('#price');
-        const number = parseInt(preis.textContent);
-        const ingridientsTom = document.querySelector('#BBQ') ;
-        const numTom = parseInt(ingridientsTom.textContent);
-        let totaltom;
-        if (isNaN(number) || number === 0 ) {
-            totaltom =  numTom;
-          } else {
-             totaltom = number + numTom;
-          }
-         return totaltom;
-        };
-        const totaltom = BBQ();
-        document.querySelector('#price').innerHTML= totaltom;
+
 
     if (evt.preventDefault) evt.preventDefault();
     if (evt.stopPropagation) evt.stopPropagation();
@@ -175,6 +211,22 @@ sauceRikotta.addEventListener("dragend", function (evt) {
     
     const nameRikotta = document.querySelector('#Ricotta').textContent;
     document.querySelector('#sauce').innerHTML += "<br>" + nameRikotta;
+    const b =  parseInt(nameRikotta.replace(/\D/g, ''));
+    function calculateTotal() {
+        const priceElements = document.querySelectorAll('#price');
+        let total = b;
+       
+        priceElements.forEach(function (element) {
+            const value = parseInt(element.textContent);
+            if (!isNaN(value)) {
+              total += value;
+            }
+          });
+        return total;
+      }
+      
+      const total = calculateTotal();
+      document.querySelector('#price').innerHTML = total;
 });
 
 const pizzaThree = document.querySelector("#cake");
@@ -193,21 +245,8 @@ pizzaThree.addEventListener("dragover", function (evt) {
 }, false);
 ;
 pizzaThree.addEventListener("drop", function (evt) {
-     function Ricotta() {
-        const preis = document.querySelector('#price');
-        const number = parseInt(preis.textContent);
-        const ingridientsTom = document.querySelector('#Ricottaprice') ;
-        const numTom = parseInt(ingridientsTom.textContent);
-        let totaltom;
-        if (isNaN(number) || number === 0 ) {
-            totaltom =   numTom;
-          } else {
-             totaltom = number + numTom;;
-          }
-         return totaltom;
-        };
-        const totaltom = Ricotta();
-        document.querySelector('#price').innerHTML= totaltom;
+    
+
     if (evt.preventDefault) evt.preventDefault();
     if (evt.stopPropagation) evt.stopPropagation();
 
@@ -255,6 +294,23 @@ mocOne.addEventListener("dragend", function (evt) {
 
     const nameCheese = document.querySelector('#cheeseName').textContent;
     document.querySelector('#topping').innerHTML += "<br>" +  nameCheese ;
+    const b =  parseInt(nameCheese.replace(/\D/g, ''));
+    function calculateTotal() {
+        const priceElements = document.querySelectorAll('#price');
+        let total = b;
+       
+        priceElements.forEach(function (element) {
+            const value = parseInt(element.textContent);
+            if (!isNaN(value)) {
+              total += value;
+            }
+          });
+        return total;
+      }
+      
+      const total = calculateTotal();
+      document.querySelector('#price').innerHTML = total;
+
 });
 
 const pizzaFour = document.querySelector("#cake");
@@ -273,21 +329,8 @@ pizzaFour.addEventListener("dragover", function (evt) {
 }, false);
 
 pizzaFour.addEventListener("drop", function (evt) {
-    function Cheese() {
-        const preis = document.querySelector('#price');
-        const number = parseInt(preis.textContent);
-        const ingridientsTom = document.querySelector('#cheese') ;
-        const numTom = parseInt(ingridientsTom.textContent);
-        let totaltom;
-        if (isNaN(number) || number === 0 ) {
-            totaltom =   numTom;
-          } else {
-             totaltom = number + numTom;
-          }
-         return totaltom;
-        };
-        const totaltom = Cheese();
-        document.querySelector('#price').innerHTML= totaltom;
+
+
     if (evt.preventDefault) evt.preventDefault();
     if (evt.stopPropagation) evt.stopPropagation();
 
@@ -332,6 +375,22 @@ this.appendChild( newImage);
 
         const nameCheese = document.querySelector('#fetaname').textContent;
         document.querySelector('#topping').innerHTML += "<br>" +  nameCheese ;
+        const b =  parseInt(nameCheese.replace(/\D/g, ''));
+        function calculateTotal() {
+            const priceElements = document.querySelectorAll('#price');
+            let total = b;
+           
+            priceElements.forEach(function (element) {
+                const value = parseInt(element.textContent);
+                if (!isNaN(value)) {
+                  total += value;
+                }
+              });
+            return total;
+          }
+          
+          const total = calculateTotal();
+          document.querySelector('#price').innerHTML = total;
     });
     
  
@@ -351,21 +410,7 @@ this.appendChild( newImage);
  }, false);
  
  pizzaFive.addEventListener("drop", function (evt) {
-    function Topping() {
-        const preis = document.querySelector('#price');
-        const number = parseInt(preis.textContent);
-        const ingridientsTom = document.querySelector('#cheese') ;
-        const numTom = parseInt(ingridientsTom.textContent);
-        let totaltom;
-        if (isNaN(number) || number === 0 ) {
-            totaltom =   numTom;
-          } else {
-             totaltom =number + numTom;
-          }
-         return totaltom;
-        };
-        const totaltom = Topping();
-        document.querySelector('#price').innerHTML= totaltom;
+
      if (evt.preventDefault) evt.preventDefault();
      if (evt.stopPropagation) evt.stopPropagation();
  
@@ -410,6 +455,22 @@ this.appendChild( newImage);
   mocarela.addEventListener("dragend", function (evt) { 
         const nameCheese = document.querySelector('#mozarelaname').textContent;
         document.querySelector('#topping').innerHTML += "<br>" + nameCheese ;
+        const b =  parseInt(nameCheese.replace(/\D/g, ''));
+        function calculateTotal() {
+            const priceElements = document.querySelectorAll('#price');
+            let total = b;
+           
+            priceElements.forEach(function (element) {
+                const value = parseInt(element.textContent);
+                if (!isNaN(value)) {
+                  total += value;
+                }
+              });
+            return total;
+          }
+          
+          const total = calculateTotal();
+          document.querySelector('#price').innerHTML = total;
     });
   
   const pizzaSix = document.querySelector("#cake");
@@ -427,23 +488,7 @@ this.appendChild( newImage);
   }, false);
   
   pizzaSix.addEventListener("drop", function (evt) {
-    // const ingridients = document.querySelector('#mozarela') ;
-    // const num = parseInt(ingridients.textContent);
-    function сalculateTotal() {
-        const preis = document.querySelector('#price');
-        const number = parseInt(preis.textContent);
-        const ingridients = document.querySelector('#mozarela') ;
-        const num = parseInt(ingridients.textContent);
-         let total;
-        if (isNaN(number) || number === 0) {
-            total =   num;
-          } else  {
-            total = number + num;   
-        }
-         return total;
-        };
-        const total = сalculateTotal();
-        document.querySelector('#price').innerHTML= total;
+ 
       if (evt.preventDefault) evt.preventDefault();
       if (evt.stopPropagation) evt.stopPropagation();
   
@@ -487,6 +532,23 @@ this.appendChild( newImage);
 
         const nameCheese = document.querySelector('#telyaname').textContent;
         document.querySelector('#topping').innerHTML += "<br>"  +nameCheese;
+        const b =  parseInt(nameCheese.replace(/\D/g, ''));
+        function calculateTotal() {
+            const priceElements = document.querySelectorAll('#price');
+            let total = b;
+
+            priceElements.forEach(function (element) {
+                const value = parseInt(element.textContent);
+                if (!isNaN(value)) {
+                  total += value;
+                }
+              });
+          
+            return total;
+          }
+          
+          const total = calculateTotal();
+          document.querySelector('#price').innerHTML = total;
     });
 
    const pizzaSeven = document.querySelector("#cake");
@@ -506,21 +568,6 @@ this.appendChild( newImage);
    
    pizzaSeven.addEventListener("drop", function (evt) {
    
-        function сalculateTotal() {
-            const preis = document.querySelector('#price');
-            const number = parseInt(preis.textContent);
-            const ingridients = document.querySelector('#telyaprice') ;
-            const num = parseInt(ingridients.textContent);
-             let total;
-            if (isNaN(number) || number === 0) {
-                total =    num;
-              } else  {
-                total = number + num;   
-            }
-             return total;
-            };
-            const total = сalculateTotal();
-            document.querySelector('#price').innerHTML= total;
        
        if (evt.preventDefault) evt.preventDefault();
        if (evt.stopPropagation) evt.stopPropagation();
@@ -565,6 +612,23 @@ this.appendChild( newImage);
     vetchOne.addEventListener("dragend", function (evt) {
             const nameCheese = document.querySelector('#tomatename').textContent;
             document.querySelector('#topping').innerHTML += "<br>" + nameCheese ;
+            const b =  parseInt(nameCheese.replace(/\D/g, ''));
+       
+        function calculateTotal() {
+            const priceElements = document.querySelectorAll('#price');
+            let total = b;
+           
+            priceElements.forEach(function (element) {
+                const value = parseInt(element.textContent);
+                if (!isNaN(value)) {
+                  total += value;
+                }
+              });
+            return total;
+          }
+          
+          const total = calculateTotal();
+          document.querySelector('#price').innerHTML = total;
         });
 
     const pizzaEight = document.querySelector("#cake");
@@ -583,28 +647,7 @@ this.appendChild( newImage);
     }, false);
     
     pizzaEight.addEventListener("drop", function (evt) {
-        // const ingridientsTom = document.querySelector('#tomate') ;
-        // const numTom = parseInt(ingridientsTom.textContent);
-        function Tomat() {
-            const preis = document.querySelector('#price');
-            
-           const number = parseInt(preis.textContent);
-            const ingridientsTom = document.querySelector('#tomate') ;
-            const numTom = parseInt(ingridientsTom.textContent);
-            let totaltom;
-            if (isNaN(number) || number === 0 ) {
-                totaltom =  numTom;
-              } else {
-                 totaltom = number + numTom;
-              }
-             return totaltom;
-            };
-            const totaltom = Tomat();
-            document.querySelector('#price').innerHTML= totaltom;
-       
-    
-       
-        
+     
 
         if (evt.preventDefault) evt.preventDefault();
         if (evt.stopPropagation) evt.stopPropagation();
@@ -650,8 +693,25 @@ this.appendChild( newImage);
            
         const nameCheese = document.querySelector('#mushroomname').textContent;
         document.querySelector('#topping').innerHTML += "<br>" + nameCheese ;
-            
-        });
+        const b =  parseInt(nameCheese.replace(/\D/g, ''));
+        function calculateTotal() {
+            const priceElements = document.querySelectorAll('#price');
+            let total = b;
+           
+
+            priceElements.forEach(function (element) {
+                const value = parseInt(element.textContent);
+                if (!isNaN(value)) {
+                  total += value;
+                }
+              });
+          
+            return total;
+          }
+          
+          const total = calculateTotal();
+          document.querySelector('#price').innerHTML = total;
+     })
       
 
   
@@ -671,28 +731,7 @@ this.appendChild( newImage);
      }, false);
      
      pizzaNine.addEventListener("drop", function (evt) {
-        // const ingridients = document.querySelector('#mushroom') ;
-        // const num = parseInt(ingridients.textContent);
-        function сalculateTotal() {
-            const preis = document.querySelector('#price');
-            const number = parseInt(preis.textContent);
-            const ingridients = document.querySelector('#mushroom') ;
-            const num = parseInt(ingridients.textContent);
-             let total;
-            if (isNaN(number) || number === 0) {
-                total =   num;
-              } else  {
-                total = number + num  
-            }
-             return total;
-            };
-            const total = сalculateTotal();
-            document.querySelector('#price').innerHTML= total;
-        
-       
-    
-
-             
+           
          if (evt.preventDefault) evt.preventDefault();
          if (evt.stopPropagation) evt.stopPropagation();
      
@@ -720,8 +759,11 @@ this.appendChild( newImage);
      
          return false;
           } false;
-});
-      
+        })
+   
+
+
+
 
 
     const inputName = document.getElementById('name');
@@ -769,4 +811,4 @@ this.appendChild( newImage);
      const btnSubmit = document.getElementById('btnSubmit');
      btnSubmit.addEventListener('mousedown', (e) => {
         window.location.replace('lesson12.1.html');
-     })})
+     })
