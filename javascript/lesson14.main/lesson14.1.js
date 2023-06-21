@@ -15,7 +15,7 @@ function req (url = "", callback) {
       .then((i)=>{ return i.json()}) 
       .then(i => callback(i))
   } 
-  
+ 
   function createCardProduct (productName, productPrice, productCategory, productImg, productDescription, eventFN, fullProductInfo) {
       const cardContainer = document.createElement("div"),
       btn = document.createElement("button"),
@@ -41,10 +41,17 @@ function req (url = "", callback) {
   
       btn.addEventListener("click", () => {eventFN(fullProductInfo)})
   
-      cardContainer.append(image, name, category, description, price, btn)
+      cardContainer.append(image, name, category, description, price, btn,) ;
   
-      return cardContainer
+      return cardContainer ;
+      
   }
+  function getData () {
+        // ГГ:ХХ:СС ДД.ММ.РРРР
+        const date = new Date();
+        const nowDate =  `${date.getHours() < 10 ? "0" + date.getHours(): date.getHours()}:${date.getMinutes() < 10 ? "0" + date.getMinutes(): date.getMinutes()}:${date.getSeconds() < 10 ? "0" + date.getSeconds(): date.getSeconds()} ${date.getDate() < 10 ? "0" + date.getDate(): date.getDate()}.${(date.getMonth()+1) < 10 ? "0" + (date.getMonth()+1): date.getMonth()+1}.${date.getFullYear()}`
+    
+        return nowDate
+    } 
   
-  
-  export {req, createCardProduct}
+  export {req, createCardProduct, getData}

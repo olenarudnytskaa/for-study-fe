@@ -1,30 +1,48 @@
 // window.addEventListener("DOMContentLoaded", () => {
 
-   
+// const cake = document.querySelector('#cake')
 const plateS = document.querySelector('#small');
-plateS.addEventListener('click', function(e) {
+const parentElement = document.querySelector('#price'); 
+const souses = document.querySelector('#sauce')
+const topping = document.querySelector('#topping')
+
+plateS.addEventListener('click', function(e) { 
+  const cake = document.querySelector('#cake')
+  parentElement.innerHTML = '';
+ souses.innerHTML = ''
+ topping.innerHTML = ''
+const image = "klassicheskij-bortik_1556622914630.png"
+cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
   const position = 'beforeend'; 
   const htmlString = '<div>50</div>'; 
-
-  const parentElement = document.querySelector('#price'); 
   parentElement.insertAdjacentHTML(position, htmlString);
+ 
 });
 
 const plateM = document.querySelector('#mid');
 plateM.addEventListener('click', function(e) {
+  const cake = document.querySelector('#cake')
+  const image = "klassicheskij-bortik_1556622914630.png"
+cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
+  parentElement.innerHTML = ''; 
+  souses.innerHTML = ''
+  topping.innerHTML = ''
+  // cake.innerHTML = ''
   const position = 'beforeend'; 
   const htmlString = '<div>60</div>'; 
-
-  const parentElement = document.querySelector('#price'); 
   parentElement.insertAdjacentHTML(position, htmlString);
 });
 
 const plateL = document.querySelector('#big');
 plateL.addEventListener('click', function(e) {
+  const cake = document.querySelector('#cake')
+  const image = "klassicheskij-bortik_1556622914630.png"
+  cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
+  parentElement.innerHTML = ''; 
+  souses.innerHTML = ''
+ topping.innerHTML = ''
   const position = 'beforeend'; 
-  const htmlString = '<div>80</div>';
-
-  const parentElement = document.querySelector('#price'); 
+  const htmlString = '<div>80</div>'; 
   parentElement.insertAdjacentHTML(position, htmlString);
 });
 
