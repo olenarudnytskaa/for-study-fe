@@ -1,6 +1,5 @@
-// window.addEventListener("DOMContentLoaded", () => {
 
-// const cake = document.querySelector('#cake')
+
 const plateS = document.querySelector('#small');
 const parentElement = document.querySelector('#price'); 
 const souses = document.querySelector('#sauce')
@@ -8,26 +7,30 @@ const topping = document.querySelector('#topping')
 
 plateS.addEventListener('click', function(e) { 
   const cake = document.querySelector('#cake')
+  cake.innerHTML = '';
+  const image = "klassicheskij-bortik_1556622914630.png"
+  cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
   parentElement.innerHTML = '';
  souses.innerHTML = ''
  topping.innerHTML = ''
-const image = "klassicheskij-bortik_1556622914630.png"
-cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
+// const image = "klassicheskij-bortik_1556622914630.png"
+// cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
   const position = 'beforeend'; 
   const htmlString = '<div>50</div>'; 
   parentElement.insertAdjacentHTML(position, htmlString);
- 
+
 });
 
 const plateM = document.querySelector('#mid');
 plateM.addEventListener('click', function(e) {
   const cake = document.querySelector('#cake')
+  cake.innerHTML = '';
+  // const cake = document.querySelector('#cake')
   const image = "klassicheskij-bortik_1556622914630.png"
 cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
   parentElement.innerHTML = ''; 
   souses.innerHTML = ''
   topping.innerHTML = ''
-  // cake.innerHTML = ''
   const position = 'beforeend'; 
   const htmlString = '<div>60</div>'; 
   parentElement.insertAdjacentHTML(position, htmlString);
@@ -35,7 +38,8 @@ cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
 
 const plateL = document.querySelector('#big');
 plateL.addEventListener('click', function(e) {
-  const cake = document.querySelector('#cake')
+   const cake = document.querySelector('#cake')
+  cake.innerHTML = '';
   const image = "klassicheskij-bortik_1556622914630.png"
   cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
   parentElement.innerHTML = ''; 

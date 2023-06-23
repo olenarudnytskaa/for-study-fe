@@ -10,7 +10,7 @@ function showProductCard (arr = []) {
 
     document.querySelector(".products")
     .append(...newElementsArr)
-}
+// }
 // function getData () {
 //     // ГГ:ХХ:СС ДД.ММ.РРРР
 //     const date = new Date();
@@ -32,7 +32,7 @@ function addToBasket (info) {
        
     }else if (info){
         localStorage.product = JSON.stringify([info]) ;
-        
+        getData
     }else{
         return
     }
@@ -56,12 +56,15 @@ function addToBasket (info) {
 
 function createProductBasket (name, price) {
     const li = document.createElement("li");
+
     li.innerText = `Назва позиції : ${name}. Ціна : ${price}  `
     return li
+    
 }
 // (${getData()})
 addToBasket()
 
+}
 // function getData () {
 //     // ГГ:ХХ:СС ДД.ММ.РРРР
 //     const date = new Date();
