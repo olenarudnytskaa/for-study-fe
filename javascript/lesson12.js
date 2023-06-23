@@ -13,8 +13,6 @@ plateS.addEventListener('click', function(e) {
   parentElement.innerHTML = '';
  souses.innerHTML = ''
  topping.innerHTML = ''
-// const image = "klassicheskij-bortik_1556622914630.png"
-// cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
   const position = 'beforeend'; 
   const htmlString = '<div>50</div>'; 
   parentElement.insertAdjacentHTML(position, htmlString);
@@ -25,7 +23,6 @@ const plateM = document.querySelector('#mid');
 plateM.addEventListener('click', function(e) {
   const cake = document.querySelector('#cake')
   cake.innerHTML = '';
-  // const cake = document.querySelector('#cake')
   const image = "klassicheskij-bortik_1556622914630.png"
 cake.insertAdjacentHTML('beforeend',`<img src="${image}" alt="Cake Image">`)
   parentElement.innerHTML = ''; 
@@ -791,7 +788,7 @@ this.appendChild( newImage);
     const inputName = document.getElementById('name');
     inputName.addEventListener('keypress', (e) => {
         const valuename = inputName.value;
-            const pattern = /([A-Z-a-z])/;
+            const pattern = /^[a-zA-Zа-яА-ЯёЁ\s-]+$/;
             if (!pattern.test(valuename)) {
                 inputName.classList.add("mistake");
                 inputName.classList.remove("succesfully");
@@ -806,7 +803,7 @@ this.appendChild( newImage);
     const inputPhone = document.getElementById('phone');
     inputPhone.addEventListener('keypress', (e) => {
         const valuephone = inputPhone.value;
-            const patternN = /\+380\d{9}$/;
+            const patternN =  /^\+380\d{8}$/;
             if (!patternN.test(valuephone)) {
                 inputPhone.classList.add("mistake");
                 inputPhone.classList.remove("succesfully");
@@ -820,7 +817,7 @@ this.appendChild( newImage);
         const inputmail = document.getElementById('mail');
         inputmail.addEventListener('keypress', (e) => {
             const value = inputmail.value;
-                const pattern = /\w+\@\w+\./;
+                const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
                 if (!pattern.test(value)) {
                     inputmail.classList.add("mistake");
                     inputmail.classList.remove("succesfully");
