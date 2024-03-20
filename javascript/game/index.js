@@ -357,8 +357,7 @@ function goToNextQuestion() {
             currentQuestionIndex = 0;
             answers = [];
             currentProgress = 10;
-
-
+            
             const container = document.querySelector('#firstq')
             const fireworks = document.querySelector('#canvas')
             const restart = document.querySelector('.restart img')
