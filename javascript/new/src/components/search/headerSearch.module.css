@@ -1,0 +1,13 @@
+
+.headerSearch{
+    width: 70%; 
+    /* margin-left: auto; */
+    margin-top: 8px;
+}
+
+.input{
+    width: 100%;
+    border-radius: 5px ;
+    border: 0.5px solid gray;
+    height: 22px;
+}

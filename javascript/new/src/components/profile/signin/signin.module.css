@@ -1,0 +1,54 @@
+.signin{
+    width: 250px;
+    border-radius: 20px ;
+    border: 0.5px solid gray;
+    display: flex;
+    flex-direction: column;
+    margin-left: -170px;
+}
+.name{
+    width: 220px;
+    margin: 2px auto 10px auto;
+    height: 35px;
+    border-radius: 4px ;
+    border: 0.5px solid rgb(172, 172, 172);
+    /* margin-top: 10px; */
+    align-items: center;
+}
+.password{
+    width: 220px;
+    margin: auto;
+    height: 35px;
+    border-radius: 5px ;
+    border: 0.5px solid rgb(172, 172, 172);
+    /* margin-top: 10px; */
+    align-items: center;
+}
+.btnsignin{
+    width: 220px;
+    height: 36px;
+    border-radius: 5px ;
+    background-color: rgb(237 202 132 / 11%);
+    border: 0.5px solid rgb(172, 172, 172);
+    align-items: center;
+    margin: 20px auto 10px auto;
+    font-family: 'Josefin Sans';
+    border: 0.5px solid rgb(237, 202, 132);;
+}
+.login{
+    width: 220px;
+    margin: auto;
+    margin-top: 15px;
+}
+.h6{
+    font-size: 12px;
+    font-family: 'Josefin Sans';
+    margin-top:  5px;
+    margin-bottom: 0px;
+    align-items: left;
+}
+.passwordname{
+    width: 220px;
+    margin: auto;
+  
+}

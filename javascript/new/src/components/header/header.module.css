@@ -1,0 +1,30 @@
+.header{
+    width: 100%;
+   margin: auto;
+}
+.header img{
+    width: 30%;
+    position: relative;
+    /* left: 35%;
+    margin: auto; */
+    height: 180px; 
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+}
+input{
+    width: 20%;
+    margin-left: auto;
+}
+.header .group{
+display: flex;
+height: 30px;
+
+width: 99%;
+}
+.up{
+ width: 26%;
+    margin-left: auto;
+}
+
+

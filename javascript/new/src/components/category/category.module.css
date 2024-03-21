@@ -1,0 +1,21 @@
+*{
+    font-family: 'Josefin Sans';
+}
+.categories h3{
+    width: 310px;
+    background-color:  rgb(237 202 132 / 11%); 
+    position: relative;
+    height: 40px;
+    font-family: 'Josefin Sans';
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(237, 202, 132);
+    color: #2d141cbc;
+}
+
+.main{
+    width: 350px;
+    display: flex;
+}
