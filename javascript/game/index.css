@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.wrapper{
+    
+    width: 100%;
+    background-color: blanchedalmond;
+    max-height: max-content;
+    height: 100vh;
+   
+}
+
+.out{
+   width: 100%;
+   height: 100vh;
+   display: block;
+}
+.quiz{
+    width: fit-content;
+    display: block;
+    position: fixed;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+    top: 30%;
+}
+#two{
+    margin-left: -8px;
+}
+#tree{
+    width: 110px;
+    margin-left:  10px;
+    margin-right:  10px;
+}
+.quiz img {
+    width: 158px;
+height: 119px;
+    /* margin-left: 10px; */
+    transform: scale(0); 
+    animation: zoomIn 1s forwards ease-in-out;
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+#play{
+    width: max-content;
+   position: fixed; 
+   top: 53%;
+   left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+    width:fit-content;
+    height: max-content; 
+    position: fixed;
+  
+}
+.counter{
+    display: none;
+    width:60px;
+    height: 35px;
+    border: 1px solid rgb(142, 232, 150);
+    background-color: #f0efcc;
+    border-radius: 30px ;
+    box-shadow: 5px 5px 2px 2px #ebe9a5;
+    text-align: center;
+    padding-top: 7px;
+
+}
+.helpblock{
+    display: none;
+    margin-left: auto;
+    width:100px;
+    height: 45px;
+    padding-top: 3px;
+}
+.help{
+    width:100px;
+    height: 35px;
+  
+}
+.help img{
+    width: 30px;
+    height: 30px;
+}
+.h4{
+    display: none;
+    width: auto;
+    margin: 0px;
+}
+.clue{
+    width:max-content;
+    height: max-content;
+    display: none;
+    border: 1px solid rgb(142, 232, 150);
+    background-color: #f0efcc;
+    border-radius: 30px;
+ 
+}
+.error{
+    display: none;
+    width: max-content;
+    text-align: center;
+    padding: 5px;
+    margin-top: 2px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+    height: max-content; 
+    position: fixed;
+    top: 10%;
+    background-color: rgb(225, 110, 110);
+    color: white;
+    border-radius: 20px;
+    border: 1px solid red;
+    font-weight: 700;
+}
+.out h1{
+    width: max-content;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+    color: rgb(78, 203, 113);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    margin: 2px;
+    display: none;
+    border: 1px solid rgb(142, 232, 150);
+    background-color: #f0efcc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.blue{
+    border: 1px solid blue;
+}
+.first{
+width: 100%; 
+height: max-content;
+display:block;
+ }
+ .text{
+width: 100%; 
+height: max-content;
+display:block;
+ }
+#firstq{
+    display: none;
+    margin: 0px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+    width: 30vw;
+    height: max-content; 
+    position: fixed;
+    top: 30%;
+    text-align: center;
+    border: 1px solid rgb(142, 232, 150);
+    background-color: rgb(198, 227, 160);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 2px 2px #ebe9a5;
+}
+.click{
+    border: 1px solid rgb(247, 85, 112);
+   
+}
+ #canvas{
+    display: none;
+    margin: 0px;
+  
+ }
+#btngroup{
+    display: none;
+    width: 99%;
+    margin: auto;
+    margin-top: auto;
+    height: min-content;
+    position: fixed;
+    bottom: 5px;
+    
+}
+.photo{
+   margin: auto;
+}
+.photo img{
+   height: 240px;
+   width: 100%;
+}
+.button{
+    width: 100%;
+   margin: auto;
+   margin-top: auto;
+   height: min-content;
+   display: flex;
+   position: fixed;
+   bottom: 5px;
+}
+.answer{
+    width: 25%;
+    height: max-content;
+    display: none;
+    background-color:  rgb(142, 232, 150); 
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 22px;
+    border: 1px solid rgb(142, 232, 150);
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 2px #cfea83;
+}
+.good{
+    width: max-content;
+    height: max-content;
+    display: none;
+    position: fixed;
+    margin: 0;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+}
+.better{
+    width: max-content;
+    height: max-content;
+    display: none;
+    position: fixed;
+    margin: 0;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+}
+.best{
+    width: max-content;
+    height: max-content;
+    display: none;
+    position: fixed;
+    margin: 0;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+}  
+.link{
+    height: fit-content;
+    display: none;
+    text-align: center;
+    background-color: #eeee89;
+    border-radius: 1px 130px 130px 130px;;
+    margin: auto;
+    color: rgb(44, 44, 42);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    box-shadow: 5px 5px 2px 2px #ebe9a5;
+    padding: 3px;
+   text-decoration:none ;
+}
+.restart{
+    width: 50px;
+    position: fixed;
+    margin: 0;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate( -50%);
+}
+.restart img{
+    display: none;
+     width: 40px;
+}
+
+@media (min-width: 280px) and (max-width: 800px){
+    #firstq{
+       overflow: hidden;
+       width: 90vw;
+   }  
+  .photo{
+        width: 100%;
+  }
+    .button{
+        display: block;
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        margin: auto;
+    }
+    /* .quiz{
+        width: fit-content;
+    } */
+    .good{
+        top: 60%;
+    }
+    .better{
+        top: 60%;
+    }
+    .best{
+        top: 60%;
+    }
+    .answer{
+        width: 45%;
+    }
+    #btngroup{
+        bottom: 0px
+    }
+.quiz img {
+    width: 90px;
+    height: 119px;
+}
+#tree{
+    width: 55px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#four{
+    width: 70px;
+}
+
+}

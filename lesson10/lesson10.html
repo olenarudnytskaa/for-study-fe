@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="display"id="display">
+          <input type="text" readonly size="18">
+        </div>
+        <div class="keys">
+          <p> 
+            <input type="button" class="button gray" id="mrc" value="mrc">
+            <input type="button" class="button gray" id="minus" value="m-">
+            <input type="button" class="button gray" id="mplus" value="m+">
+            <input type="button" class="button pink" value="/">
+          </p>
+          <p>
+            <input type="button" class="button black" value="7">
+            <input type="button" class="button black" value="8">
+            <input type="button" class="button black" value="9">
+            <input type="button" class="button pink" value="*">
+          </p>
+          <p>
+            <input type="button" class="button black" value="4">
+            <input type="button" class="button black" value="5">
+            <input type="button" class="button black" value="6">
+            <input type="button" class="button pink" value="-">
+          </p>
+          <p>
+            <input type="button" class="button black" value="1">
+            <input type="button" class="button black" value="2">
+            <input type="button" class="button black" value="3">
+            <input type="button" class="button pink" value="+">
+          </p>
+          <p>
+            <input type="button" class="button black" value="0">
+            <input type="button" class="button black" value=".">
+            <input type="button" class="button black" onclick="clearAll" id="C" value="C">
+            <input type="button" class="button orange" value="=" id="eq">
+          </p>
+        </div>
+
+        <style>
+            body {
+  background-color: tan;
+}
+
+.box {
+  background-color: #3d4543;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  position: relative;
+  top: 80px;
+  left: 40%;
+}
+
+.display {
+  background-color: #222;
+  width: 225px;
+  position: relative;
+  left: 15px;
+  top: 20px;
+  height: 40px;
+}
+.display input {
+  width: 220px;
+  position: relative;
+  left: 2px;
+  top: 2px;
+  height: 35px;
+  color: black;
+  background-color: #bccd95;
+  font-size: 21px;
+  text-align: right;
+}
+
+.keys {
+  position: relative;
+  top: 15px;
+}
+.show{
+            display: block;
+            background-color: green;
+        }
+.button {
+  width: 40px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 17px;
+  cursor: pointer;
+  border-top: 2px solid transparent;
+  outline: none;
+}
+
+.button.gray {
+  color: white;
+  background-color: #6f6f6f;
+  border-bottom: black 2px solid;
+  border-top: 2px #6f6f6f solid;
+  
+}
+.button.pink {
+  color: black;
+  background-color: #ff4561;
+  border-bottom: black 2px solid;
+}
+
+.button.black {
+  color: white;
+  background-color: #303030;
+  border-bottom: black 2px solid;
+  border-top: 2px #303030 solid;
+}
+
+.button.orange {
+  color: black;
+  background-color: #FF9933;
+  border-bottom: black 2px solid;
+  border-top: 2px #FF9933 solid;
+}
+.small{
+  font-size: 8px;
+  vertical-align: text-top;
+  text-align: left;
+}
+.gray:active {
+  border-top: black 2px solid;
+  border-bottom: 2px #6f6f6f solid;
+  color: blueviolet;
+}
+
+.pink:active {
+  border-top: black 2px solid;
+  border-bottom: #ff4561 2px solid;
+  color: aqua;
+}
+
+.black:active {
+  color: red;
+  border-top: black 2px solid;
+  border-bottom: #303030 2px solid;
+}
+
+.orange:active {
+  border-top: black 2px solid;
+  border-bottom: #FF9933 2px solid;
+  color: white;
+}
+p {
+  line-height: 10px;
+}
+.show{
+  display: block;
+ border: aqua;
+}
+.error{
+  border: 2px #ff4561 solid;
+}
+input[disabled] {
+  opacity: .5 ;
+}
+        </style>
+    <script src="lesson10.1.js"></script>
+</body>
+</html>

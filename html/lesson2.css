@@ -1,0 +1,15 @@
+h3{
+    color: blueviolet;
+}
+.size{
+    width: 300px;
+    border: 15px;
+    margin: auto; 
+    padding: 5px;
+}
+p{
+    color: rgb(122, 128, 116);
+}
+p{
+    font-size: 20px;
+}

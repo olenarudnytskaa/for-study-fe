@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">div3</div>
+    <div class="div4">div4</div>
+    <div class="div5">div5</div>
+    <br>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <p>paragraph 3</p>
+    <p>paragraph 4</p>
+    <p>paragraph 5</p>
+    <p>paragraph 6</p>
+    <p>paragraph 7</p>
+    <p>paragraph 8</p>
+    <p>paragraph 9</p>
+    <p>paragraph 10</p>
+
+    br
+    <input type="text" placeholder="write" id = "userText";>
+    <button type="button" onclick="getuserText(), cleanuserText();">push</button>
+    <div></div>
+    <br>
+
+    <!-- <input type="radio"name= "answer" value = "answer" class="answer"> -->
+    <!-- <input type="radio"name= "answer" value = "answer" class="answer"> -->
+   <img id="img" src="https://itproger.com/img/courses/1476977240.jpg"></img> 
+   <button  onclick="changePictures();">Змінити картинку</button>
+<br>
+  <input type="text" placeholder="write" id="input1" >
+  <input type="text" placeholder="write" id="input2">
+  <button type="button" onclick="changeInput();">change</button>
+
+  <ul id="list">
+    <li >List Item 1</li>
+    <li >List Item 2</li>
+    <li >List Item 3</li>
+    <li >List Item 4</li>
+    <li>List Item 5</li>
+</ul>
+    <br />
+    <input type="button" onclick="selectFirstChild()"  style="width: 210px;" value="Выбрать первый элемент" /><br />
+    <input type="button" onclick="selectLastChild()" style="width: 210px;" value="Выбрать последний элемент" /><br />
+    <input type="button" onclick="selectNextNode()" style="width: 210px;" value="Выбрать следующий элемент" /><br />
+    <input type="button" onclick="selectPrevNode()" style="width: 210px;" value="Выбрать предыдущий элемент" /><br />
+    <input type="button" onclick="createNewChild()" style="width: 210px;" value="Добавить элемент" /><br />
+    <input type="button" onclick="removeLastChild()" style="width: 210px;" value="Удалить элемент" /><br />
+    <input type="button" onclick="createNewChildAtStart()" style="width: 210px;" value="Добавить  в начало" /><br />
+    <style>
+        p{
+            width: 90px;
+            background-color: aquamarine;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+     input{
+        border: 1px solid green;
+     }
+     button{
+        width: 60px;
+        height: 30px;
+        border: 1px solid grey;
+        font-size: 9px;
+    
+     }
+    
+    
+    </style>
+    <script src="lesson8.js"></script>
+</body>
+</html>
