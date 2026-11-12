@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    font-family: 'Poppins', sans-serif;
+    width: 1500px;
+    margin: 0 auto;
+    float: left;
+    margin: 12 16px;
+}
+.class{
+    float: right;
+    padding: 10px;
+    margin: 24px;
+    color: black;
+    background-color: white
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.class-logo{
+    float: left;
+    color: black;
+    margin: 24px;
+    font-size: 20px;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    width: 128px;
+    height: 45px;
+    float: right;
+    color: blue;
+    margin: 24px;
+    border: 2px solid blue;
+    background-color: white;
+    font-size: 20px;
+}
+.h1{
+    font-family: 'Poppins', sans-serif;
+    width: 572px;
+    margin: 185px 352px;
+    padding: 10px;
+}
+

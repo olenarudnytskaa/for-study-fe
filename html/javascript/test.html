@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Drag & Drop</title>
+    <body>
+        <!-- Для того что бы активировать возможность переносить данные необходимо установить атрибут draggable и создать обработчик на событие dragstart -->
+        <div id="souse" draggable="true" ><img src="sous-klassicheskij_1557758736353.png"></div>
+    
+        <div id="pizza"><img src="klassicheskij-bortik_1556622914630.png" alt=""></div>
+    </body>
+    <style>
+      #pizza img{
+        display: block;
+            width: 200px;
+            height: 100px;
+      }
+
+        #souse img{
+           
+            width: 100px;
+            display: table;
+            height: 60px;
+            cursor:move
+        }
+        
+    </style>
+
+<script src="test.js"></script>
+
+
+</html>

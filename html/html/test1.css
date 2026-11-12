@@ -1,0 +1,41 @@
+.petal {
+    position: relative;
+    width: 5em;
+    height: 5em;
+    margin: 4em 9em;
+    background: blue;
+    border-radius: 100% 0;
+    box-shadow: -6em 6em green;
+    }
+  
+  .petal:before,
+  .petal:after {
+    content: "";
+    display: block;
+    width: 5em;
+    height: 5em
+    }
+  
+  .petal:before {
+    position: absolute;
+    left: -12em;
+    top: -2em;
+    margin: 2em 6em;
+    background: orange;
+    border-radius: 0 100%;
+    box-shadow: 6em 6em purple;
+    transform: rotate(-30deg);
+    transform-origin: 5.5em 5.5em;
+    }
+  
+  .petal:after {
+    position: absolute;
+    left: -12em;
+    top: -2em;
+    margin: 2em 6em;
+    background:red;
+    border-radius: 0 100%;
+    box-shadow: 6em 6em gold;
+    transform: rotate(30deg);
+    transform-origin: 5.5em 5.5em
+    }
