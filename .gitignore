@@ -1,3 +1,4 @@
 game/
 portfolio/
 .DS_Store
+node_modules/
